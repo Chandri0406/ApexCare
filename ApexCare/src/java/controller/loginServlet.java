@@ -17,7 +17,7 @@ public class loginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Display login page
-        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        request.getRequestDispatcher("${pageContext.request.contextPath}/WEB-INF/views/login.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,15 +32,15 @@ public class loginServlet extends HttpServlet {
             if (user.getPassword().equals(password)) {
                 switch (user.getRole()) {
                     case "Agent":
-                        response.sendRedirect("Agent/profileAgent.jsp");
+                        response.sendRedirect("${pageContext.request.contextPath}/profileAgent.jsp");
                         break;
 
                     case "Client":
-                        response.sendRedirect("Client/profileClient.jsp");
+                        response.sendRedirect("${pageContext.request.contextPath}/profileClient.jsp");
                         break;
 
                     case "Technician":
-                        response.sendRedirect("Technician/profileTechnician.jsp");
+                        response.sendRedirect("${pageContext.request.contextPath}/profileTechnician.jsp");
                         break;
                 }
             } else {

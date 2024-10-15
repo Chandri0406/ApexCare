@@ -40,7 +40,7 @@
     </form>
 
     <div>
-        Not a user? <a href="createUser.jsp"><u>Create an account</u></a>
+        Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp"><u>Create an account</u></a>
     </div>
 </div>
 </body>
