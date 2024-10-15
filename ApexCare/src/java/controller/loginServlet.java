@@ -4,7 +4,6 @@ import controller.DBConnection;
 import models.User;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -17,30 +16,37 @@ public class loginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Display login page
-        request.getRequestDispatcher("${pageContext.request.contextPath}/WEB-INF/views/login.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/login.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String role = request.getParameter("role");
+
+        // Debugging: Log the attempted login
+        System.out.println("Attempting to login with username: " + username);
 
         User user = dbconn.getUserDetails(username);
 
         if (user != null) {
             // Password check (ensure passwords are hashed in production)
-            if (user.getPassword().equals(password)) {
+            if (user.getPassword().equals(password)) {  // Replace with hashed password check
                 switch (user.getRole()) {
                     case "Agent":
-                        response.sendRedirect("${pageContext.request.contextPath}/profileAgent.jsp");
+                        response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
                         break;
 
                     case "Client":
-                        response.sendRedirect("${pageContext.request.contextPath}/profileClient.jsp");
+                        response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
                         break;
 
                     case "Technician":
-                        response.sendRedirect("${pageContext.request.contextPath}/profileTechnician.jsp");
+                        response.sendRedirect(request.getContextPath() + "/profileTechnician.jsp");
+                        break;
+
+                    default:
+                        request.setAttribute("error", "Invalid role.");
+                        doGet(request, response); // Show login page with error
                         break;
                 }
             } else {

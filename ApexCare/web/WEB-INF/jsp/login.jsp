@@ -4,12 +4,23 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/loginStyle.css"> <!-- Link to your CSS file -->
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var checkbox = document.getElementById("showPassword");
+            if (checkbox.checked) {
+                passwordField.type = "text"; // Show password
+            } else {
+                passwordField.type = "password"; // Hide password
+            }
+        }
+    </script>
 </head>
 <body>
 <div id="loginBody">
     <h2 id="lgLabel">Login</h2>
 
-    <form method="post" action="loginUser">
+    <form method="post" action="login">
         <div class="fields">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required />
@@ -18,6 +29,7 @@
         <div class="fields">
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
+            <input type="checkbox" id="showPassword" onclick="togglePassword()"> Show Password
         </div>
 
         <div class="fields">
@@ -39,7 +51,7 @@
         <button id="loginBtn" type="submit">Login</button>
     </form>
 
-    <div>
+    <div class="create-account">
         Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp"><u>Create an account</u></a>
     </div>
 </div>

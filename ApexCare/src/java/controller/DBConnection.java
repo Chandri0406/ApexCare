@@ -1,25 +1,34 @@
 package controller;
 
+import java.time.LocalDate;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-
-import models.*;
+import models.*;  // Ensure models are imported correctly
 
 public class DBConnection {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/ApexCareDB";
     private static final String USER = "Tester";
     private static final String PASSWORD = "5432";
+    private static final String DRIVER = "org.postgresql.Driver";
 
-    public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+    // Getting connection with exception handling
+    public Connection getConnection() throws ClassNotFoundException {
+        try {
+            Class.forName(DRIVER); // Load the JDBC driver
+            Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
+            if (con != null) {
+                System.out.println("Connected to DB");
+            }
+            return con; // Return the connection
+        } catch (SQLException ex) {
+            System.out.println("Could not connect: " + ex.getMessage());
+            throw new RuntimeException("Database connection failed!", ex); // Re-throw as unchecked exception
+        }
     }
 
-    // Equivalent to C# GetUserDetails method
     public User getUserDetails(String username) {
         User user = null;
-        String query = "SELECT * FROM sp_getuser(?)";  // Assuming a stored procedure that returns user details
+        String query = "CALL sp_getuser(?)";  // Assuming a stored procedure that returns user details
 
         try (Connection connection = getConnection();
              PreparedStatement ps = connection.prepareStatement(query)) {
@@ -32,12 +41,13 @@ public class DBConnection {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
 
         return user;
     }
 
-    // Equivalent to C# GetClientDetails method
     public Clients getClientDetails(String username) {
         Clients client = null;
         String query = "SELECT * FROM sp_getclientdetails(?)";  // Assuming a stored procedure
@@ -60,13 +70,13 @@ public class DBConnection {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
 
         return client;
     }
 
-
-    // Equivalent to C# addIssue method
     public void addIssue(Issue issue) {
         String query = "CALL sp_addissue(?, ?, ?, ?, ?, ?, ?)";  // Assuming this is a stored procedure
 
@@ -84,10 +94,11 @@ public class DBConnection {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
     }
 
-    // Equivalent to C# addComplaint method
     public void addComplaint(Complaint complaint) {
         String query = "CALL sp_addcomplaint(?, ?, ?, ?, ?)";  // Assuming this is a stored procedure
 
@@ -103,10 +114,11 @@ public class DBConnection {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
     }
 
-    // Equivalent to C# addFeedback method
     public void addFeedback(Feedback feedback) {
         String query = "CALL sp_addfeedback(?, ?, ?, ?)";  // Assuming this is a stored procedure
 
@@ -121,10 +133,11 @@ public class DBConnection {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
     }
 
-    // Equivalent to C# InsertUser method
     public void insertUser(User user, Clients client) {
         String query = "CALL sp_insertclient(?, ?, ?, ?, ?, ?)";  // Assuming this is a stored procedure
 
@@ -141,10 +154,11 @@ public class DBConnection {
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
     }
 
-    // Equivalent to C# GetAgentById method
     public ServiceAgent getAgentById(String agentID) {
         ServiceAgent serviceAgent = null;
         String query = "SELECT * FROM sp_getagents(?)";  // Assuming this is a stored procedure
@@ -166,6 +180,8 @@ public class DBConnection {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace(); // Handle class not found
         }
 
         return serviceAgent;

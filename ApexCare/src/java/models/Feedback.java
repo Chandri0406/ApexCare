@@ -1,17 +1,22 @@
 package models;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Feedback {
+    
     private int feedbackID;
     private int clientID;
     private String issueID;
     private int rating;
     private String comments;
-    private Date dateProvided;
+    private LocalDate dateProvided;
 
-    // Constructor
-    public Feedback(int clientID, String issueID, int rating, String comments, Date dateProvided) {
+    // Default constructor
+    public Feedback() {}
+
+    // Parameterized constructor
+    public Feedback(int clientID, String issueID, int rating, String comments, LocalDate dateProvided) 
+    {
         this.clientID = clientID;
         this.issueID = issueID;
         this.rating = rating;
@@ -20,56 +25,80 @@ public class Feedback {
     }
 
     // Getters and setters
-    public int getFeedbackID() {
+    public int getFeedbackID() 
+    {
         return feedbackID;
     }
 
-    public void setFeedbackID(int feedbackID) {
+    public void setFeedbackID(int feedbackID) 
+    {
         this.feedbackID = feedbackID;
     }
 
-    public int getClientID() {
+    public int getClientID() 
+    {
         return clientID;
     }
 
-    public void setClientID(int clientID) {
+    public void setClientID(int clientID) 
+    {
         this.clientID = clientID;
     }
 
-    public String getIssueID() {
+    public String getIssueID() 
+    {
         return issueID;
     }
 
-    public void setIssueID(String issueID) {
+    public void setIssueID(String issueID) 
+    {
         this.issueID = issueID;
     }
 
-    public int getRating() {
+    public int getRating() 
+    {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(int rating) 
+    {
         this.rating = rating;
     }
 
-    public String getComments() {
+    public String getComments() 
+    {
         return comments;
     }
 
-    public void setComments(String comments) {
+    public void setComments(String comments) 
+    {
         this.comments = comments;
     }
 
-    public Date getDateProvided() {
+    public LocalDate getDateProvided() {
         return dateProvided;
     }
 
-    public void setDateProvided(Date dateProvided) {
+    public void setDateProvided(LocalDate dateProvided) {
         this.dateProvided = dateProvided;
     }
 
-    // Optional: Validation logic or methods related to feedback
+    // Validation method
     public boolean isValid() {
-        return rating >= 1 && rating <= 5; // For example, ensure rating is between 1 and 5
+        return rating >= 1 && rating <= 5 && (comments == null || comments.length() <= 500);
     }
+
+    @Override
+    public String toString() 
+    {
+        return "Feedback{" +
+               "feedbackID=" + feedbackID +
+               ", clientID=" + clientID +
+               ", issueID='" + issueID + '\'' +
+               ", rating=" + rating +
+               ", comments='" + comments + '\'' +
+               ", dateProvided=" + dateProvided +
+                '}';
+    }
+
 }

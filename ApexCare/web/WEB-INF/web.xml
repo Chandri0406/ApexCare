@@ -12,6 +12,18 @@
         <servlet-name>ProfileClientServlet</servlet-name>
         <servlet-class>controller.ProfileClientServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FeedbackController</servlet-name>
+        <servlet-class>controller.FeedbackController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ComplaintServlet</servlet-name>
+        <servlet-class>controller.ComplaintServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContrcatHistoryServlet</servlet-name>
+        <servlet-class>controller.ContractHistoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -23,5 +35,17 @@
     <servlet-mapping>
         <servlet-name>ProfileClientServlet</servlet-name>
         <url-pattern>/ProfileClientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FeedbackController</servlet-name>
+        <url-pattern>/FeedbackController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ComplaintServlet</servlet-name>
+        <url-pattern>/ComplaintServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContrcatHistoryServlet</servlet-name>
+        <url-pattern>/ContrcatHistoryServlet</url-pattern>
     </servlet-mapping>
 </web-app>
