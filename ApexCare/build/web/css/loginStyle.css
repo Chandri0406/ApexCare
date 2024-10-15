@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    background-color: #3D3D3D;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+/* Background for the form */
+#loginBody {
+    position: absolute;
+    width: 602px;
+    height: 725px;
+    background: #C7C7BF;
+    box-shadow: 5px 5px 4px rgba(0, 34, 78, 0.39);
+    padding: 50px; 
+    border-radius: 10px;
+}
+
+/* Button Styles */
+#loginBtn {
+    position: absolute;
+    width: 161.32px;
+    height: 43.56px;
+    background: #70706C;
+}
+
+/* Sign Up Text */
+.signup-text {
+    position: absolute;
+    width: 64.92px;
+    height: 24.2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Input Field Styles */
+.input-field {
+    position: absolute;
+    width: 405.04px;
+    height: 39.43px;
+    opacity: 0.85;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Rectangle Background for Inputs */
+.rectangle {
+    position: absolute;
+    width: 405.04px;
+    height: 21px;
+    background: #D7D7D7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Labels */
+.label {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+/* Validation Error Messages */
+.validation-error {
+    position: absolute;
+    width: 395.26px;
+    height: 22.16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #EB0000;
+}
+
+/* General Feedback Text */
+.feedback-text {
+    position: absolute;
+    width: 237px;
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #4376AB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
