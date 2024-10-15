@@ -1,5 +1,6 @@
 package models;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Complaint {
@@ -16,6 +17,10 @@ public class Complaint {
         this.issueID = issueID;
         this.description = description;
         this.dateReported = dateReported;
+    }
+
+    public Complaint(int clientID, String sueID, LocalDate dateReported, LocalDate dateResolved, String description) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     // Getters and setters
@@ -70,5 +75,9 @@ public class Complaint {
     // Optional: Validation logic
     public boolean isResolved() {
         return dateResolved != null;
+    }
+
+    public boolean isValid() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

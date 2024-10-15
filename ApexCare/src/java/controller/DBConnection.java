@@ -1,6 +1,6 @@
 package controller;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.sql.*;
 import models.*;  // Ensure models are imported correctly
 
@@ -127,7 +127,7 @@ public class DBConnection {
              
             ps.setString(1, feedback.getIssueID());
             ps.setInt(2, feedback.getRating());
-            ps.setDate(3, new java.sql.Date(feedback.getDateProvided().getTime()));
+            ps.setDate(3, new java.sql.Date(feedback.getDateProvided().getDayOfMonth()));
             ps.setString(4, feedback.getComments());
 
             ps.executeUpdate();

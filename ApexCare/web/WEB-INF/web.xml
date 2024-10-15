@@ -5,10 +5,6 @@
         <servlet-class>controller.loginServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>UserController</servlet-name>
-        <servlet-class>controller.UserController</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>ProfileClientServlet</servlet-name>
         <servlet-class>controller.ProfileClientServlet</servlet-class>
     </servlet>
@@ -24,13 +20,13 @@
         <servlet-name>ContrcatHistoryServlet</servlet-name>
         <servlet-class>controller.ContractHistoryServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>controller.CreateUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>UserController</servlet-name>
-        <url-pattern>/UserController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ProfileClientServlet</servlet-name>
@@ -45,7 +41,11 @@
         <url-pattern>/ComplaintServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ContrcatHistoryServlet</servlet-name>
-        <url-pattern>/ContrcatHistoryServlet</url-pattern>
+        <servlet-name>ContractHistoryServlet</servlet-name>
+        <url-pattern>/ContractHistoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/CreateUserServlet</url-pattern>
     </servlet-mapping>
 </web-app>
