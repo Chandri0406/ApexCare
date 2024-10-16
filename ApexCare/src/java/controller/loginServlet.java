@@ -3,22 +3,24 @@ package controller;
 import models.User;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @WebServlet("/login")
 public class loginServlet extends HttpServlet {
-    private DBConnection dbconn = new DBConnection();  // Assuming you have a DBConnection class to manage the database
+    Connection conn;
+    private DBConnection dbconn = new DBConnection();
+    User user;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Display the login page
         request.getRequestDispatcher("/login.jsp").forward(request, response);
     }
 
@@ -26,52 +28,49 @@ public class loginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("Username");
         String password = request.getParameter("Password");
+        String agentRole = request.getParameter("Agent");
+        String clientRole = request.getParameter("Client");
+        String technicianRole = request.getParameter("Technician");
 
-        // Fetch user details based on the username
-        User user = null;
         try {
-            user = dbconn.getUserDetails(username);
+            boolean loggedIn = fetchData(username, password);
+
+            if (loggedIn) {
+                // Login successful
+                User user = new User(username, password, clientRole); // Initialize user
+                HttpSession session = request.getSession();
+                session.setAttribute("username", username);
+                response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
+            } else {
+                // Login failed
+                request.setAttribute("errorMessage", "Invalid username or password.");
+                request.getRequestDispatcher("/login.jsp").forward(request, response);
+            }
         } catch (SQLException ex) {
-            Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            // Handle database exceptions
+            ex.printStackTrace();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
-        if (user != null) {
-            // Check if the password matches
-            if (user.getPassword().equals(password)) { // In production, ensure to use password hashing
-                // Store user details in session
-                HttpSession session = request.getSession();
-                session.setAttribute("username", username);
-                session.setAttribute("user", user); // You can store the user object if needed
-                
-                // Redirect based on the user role
-                switch (user.getRole()) {
-                    case "Agent":
-                        response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
-                        break;
-                        
-                    case "Client":
-                        response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
-                        break;
-                        
-                    case "Technician":
-                        response.sendRedirect(request.getContextPath() + "/profileTechnician.jsp");
-                        break;
-                        
-                    default:
-                        // If no valid role is found, send back to login with an error
-                        request.setAttribute("errorMessage", "Invalid role.");
-                        request.getRequestDispatcher("/login.jsp").forward(request, response);
+    }
+
+    private boolean fetchData(String username, String password) throws SQLException, ClassNotFoundException {
+       Connection conn = dbconn.getConnection();
+        try (
+             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM \"tb_User\" WHERE \"Username\" = ? AND \"Password\" = ?")) {
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    // Check password
+                    String dbPassword = rs.getString("Password");
+                    if (dbPassword.equals(password)) {
+                        return true; // Login successful
+                    }
                 }
-            } else {
-                // Password doesn't match
-                request.setAttribute("errorMessage", "Invalid password.");
-                request.getRequestDispatcher("/login.jsp").forward(request, response);
             }
-        } else {
-            // User not found
-            request.setAttribute("errorMessage", "No user found. Please register.");
-            request.getRequestDispatcher("/login.jsp").forward(request, response);
         }
+        return false; // Login failed
     }
 }

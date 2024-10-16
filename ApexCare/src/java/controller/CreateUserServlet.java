@@ -1,71 +1,93 @@
-package controller;
-
-import models.Clients;
+import controller.DBConnection;
+import jakarta.servlet.RequestDispatcher;
 import models.User;
-
+import models.Clients;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.sql.SQLException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+import java.util.logging.Logger;
+import java.util.logging.Level;
+import java.sql.*;
 @WebServlet("/createUser")
 public class CreateUserServlet extends HttpServlet {
-    
-     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Display login page
-        request.getRequestDispatcher("/createUser.jsp").forward(request, response);
-    }
-    
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Retrieve form data
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String phone = request.getParameter("phone");
-        String email = request.getParameter("email");
-        String confirmEmail = request.getParameter("confirmEmail");
-        String address = request.getParameter("address");
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        String confirmPassword = request.getParameter("confirmPassword");
 
-        boolean isValid = true;
-        String errorMessage = "";
-
-        // Validate email confirmation
-        if (!email.equals(confirmEmail)) {
-            errorMessage += "Emails do not match!<br/>";
-            isValid = false;
-        }
-
-        // Validate password confirmation
-        if (!password.equals(confirmPassword)) {
-            errorMessage += "Passwords do not match!<br/>";
-            isValid = false;
-        }
-
-        // If validation fails, send back to the JSP with error messages
-        if (!isValid) {
-            request.setAttribute("errorMessage", errorMessage);
-            request.getRequestDispatcher("createUser.jsp").forward(request, response);
-            return;
-        }
-
-        // Insert user into the database if validation passes
+   public void addUser(User user, Clients clients) throws SQLException {
+        
+        Connection con = null;
+        DBConnection dbcon = new DBConnection();
         try {
-            DBConnection db = new DBConnection();
-            User user = new User(username, password); // Assuming User class has a constructor
-            Clients clients = new Clients(firstName, lastName, phone, email, address); // Assuming Clients class has a constructor
+            con = (Connection) dbcon.getConnection();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(CreateUserServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        String sql = "INSERT INTO \"tb_User\"(\"Username\", \"Password\")"
+                + " VALUES (?, ?)";
 
-            db.insertUser(user, clients);
+        try (
+             PreparedStatement pstmt = con.prepareStatement(sql)) {
 
-            // Redirect to login page after successful signup
-            response.sendRedirect("/login.jsp");
-        } catch (Exception ex) {
-            request.setAttribute("errorMessage", "An error occurred while creating the user.");
-            request.getRequestDispatcher("createUser.jsp").forward(request, response);
+            // Set parameters
+            pstmt.setString(1, user.getUsername());
+            pstmt.setString(2, user.getPassword());
+            pstmt.setString(3, clients.getFirstName());  
+            pstmt.setString(4, clients.getLastName());
+            pstmt.setString(5, clients.getPhone());
+            pstmt.setString(6, clients.getEmail());
+            pstmt.setString(7, clients.getAddress());
+
+           // Execute the stored procedure
+        pstmt.executeUpdate();
+        } catch (SQLException ex) {
+            // Log or handle the error appropriately
+            System.out.println("Error adding complaint: " + ex.getMessage());
+            throw new SQLException("Failed to add complaint", ex);
         }
     }
+/*
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
+        // Retrieve form data from request
+        int clientID = Integer.parseInt(request.getParameter("clientID"));
+        String issueID = request.getParameter("issueID");
+        String description = request.getParameter("description"); 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate dateReported = LocalDate.parse(request.getParameter("dateReported"), formatter);
+        LocalDate dateResolved = LocalDate.parse(request.getParameter("dateResolved"), formatter);
+        
+        boolean isComplaintSent = false;  // Track if the complaint was successfully sent
+        
+        try {
+            // Create a Complaint object
+            Complaint complaint = new Complaint();
+            complaint.setClientID(clientID);
+            complaint.setIssueID(issueID);
+            complaint.setDescription(description);
+            complaint.setDateReported(dateReported);  // Assuming a date string, parse if necessary
+            complaint.setDateResolved(dateResolved);
+            
+            // Use your DBConnection to add the complaint to the database
+            addComplaint(complaint);
+
+            isComplaintSent = true;  // Mark as successfully sent
+        } catch (Exception ex) {
+            // Log or handle any errors
+            ex.printStackTrace();
+            request.setAttribute("errorMessage", "An error occurred while sending the complaint.");
+        }
+        
+        // Set attributes to display messages back in JSP
+        request.setAttribute("isComplaintSent", isComplaintSent);
+        
+        // Forward back to the JSP page with success/error feedback
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/complaint.jsp");
+        dispatcher.forward(request, response);
+    }
+
+}
+*/
 }

@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="models.User, models.Clients" %> <!-- Replace with actual package -->
+<%@ page import="models.User, models.Clients" %> <!-- Adjust package names as necessary -->
+<%@ page import="controller.CreateUserServlet" %> <!-- Adjust package names as necessary -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +13,15 @@
 
 <div class="bg"> 
     <h2 id="lgLabel">CREATE A USER</h2>
-    <form action="createUser" method="post">
 
+    <!-- Display error message if it exists -->
+    <c:if test="${not empty errorMessage}">
+        <div class="error-message">
+            <p>${errorMessage}</p>
+        </div>
+    </c:if>
+
+    <form action="createUser" method="post">
         <div>
             <label for="firstName" class="lbl">First Name: </label> 
             <input type="text" name="firstName" class="inputBox" required />
@@ -60,7 +69,7 @@
             <span class="PasswordValidation error-message" id="passwordError"></span> 
         </div>
 
-        <button type="submit" class="btn">Sign Up</button>
+       <button type="submit" class="btn">Sign Up</button>
     </form>
 </div>
 
@@ -96,19 +105,6 @@
             passwordError.textContent = "";
         }
     }
-
-    // Prevent form submission if there are validation errors
-    document.getElementById('signupForm').addEventListener('submit', function (event) {
-        validateEmail();
-        validatePassword();
-
-        const emailError = document.getElementById('emailError').textContent;
-        const passwordError = document.getElementById('passwordError').textContent;
-
-        if (emailError || passwordError) {
-            event.preventDefault(); // Stop form submission
-        }
-    });
 </script>
 
 </body>
