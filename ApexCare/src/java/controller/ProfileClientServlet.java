@@ -20,7 +20,7 @@ public class ProfileClientServlet extends HttpServlet {
         // Populate test data
         client = new Clients();
         client.setClientID(13);
-        client.setUsername("AJones777");
+        client.setUsername("Funky_Sam");
         client.setFirstName("Alex");
         client.setLastName("Jones");
         client.setPhone("011 233 4576");
@@ -48,6 +48,6 @@ public class ProfileClientServlet extends HttpServlet {
         
         DBConnection db = new DBConnection();
         //db.updateClient(updatedClient);
-        db.updateClient(updatedClient);
+        db.updateClient2(updatedClient);
     }
 }

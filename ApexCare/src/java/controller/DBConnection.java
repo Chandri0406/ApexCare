@@ -147,7 +147,7 @@ public void insertUser(User user, Clients clients) throws SQLException, ClassNot
         try{
             con = getConnection();
             
-            String updateQuery = "UPDATE public.tb_Client SET Username = ?, FirstName = ?, LastName = ?, Phone = ?, Email = ?, Address = ? WHERE ClientID = ?";
+            String updateQuery = "UPDATE \"public.tb_Client\" SET \"Username\" = ?, \"FirstName\" = ?, \"LastName\" = ?, \"Phone\" = ?, \"Email\" = ?, \"Address\" = ? WHERE \"ClientID\" = ?";
 
             PreparedStatement statement = con.prepareStatement(updateQuery);
 
