@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,28 +13,28 @@
     <form method="post" action="${pageContext.request.contextPath}/login">
         <div>
             <label class="lbl">Username</label>
-            <input type="text" name="username" class="inputBox" required>
-            <div class="Validation"> <!-- This could show validation messages -->
-                <c:if test="${not empty error}">${error}</c:if>
-            </div>
+            <input type="text" name="Username" class="inputBox" required>
         </div>
 
         <div>
             <label class="lbl">Password</label>
-            <input type="password" name="password" class="inputBox" required>
-            <div class="Validation"> <!-- This could show validation messages -->
-                <c:if test="${not empty error}">${error}</c:if>
-            </div>
+            <input type="password" name="Password" class="inputBox" required>
         </div>
-
+                    
         <div>
             <label class="lbl">Role</label>
             <select name="role" class="inputBox">
-                 <option class="lbl" value="">Choose a Role</option>
+                <option class="lbl" value="">Choose a Role</option>
                 <option class="lbl" value="Agent">Agent</option>
                 <option class="lbl" value="Client">Client</option>
                 <option class="lbl" value="Technician">Technician</option>
             </select>
+        </div>
+                    
+        <div class="Validation"> <!-- This could show validation messages -->
+            <c:if test="${not empty error}">
+                <span class="errorMessage">${error}</span>
+            </c:if>
         </div>
 
         <button id="btn" type="submit">Login</button>

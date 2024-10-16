@@ -12,8 +12,7 @@ public class Clients {
     private String email;
 
     // Default constructor
-    public Clients() {
-    }
+    public Clients() {}
 
     // Constructor with parameters
     public Clients(int clientID, String username, String firstName, String lastName, String address, String phone, String email) {
@@ -30,7 +29,6 @@ public class Clients {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    // Getters and setters
     public int getClientID() {
         return clientID;
     }

@@ -1,0 +1,1442 @@
+16-Oct-2024 15:49:11.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.28
+16-Oct-2024 15:49:11.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 15:14:43 UTC
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.28.0
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.3+7-LTS-152
+16-Oct-2024 15:49:11.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Oct-2024 15:49:11.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28
+16-Oct-2024 15:49:11.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28
+16-Oct-2024 15:49:11.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\logging.properties
+16-Oct-2024 15:49:11.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Oct-2024 15:49:11.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Oct-2024 15:49:11.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Oct-2024 15:49:11.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28
+16-Oct-2024 15:49:11.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28
+16-Oct-2024 15:49:11.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\temp
+16-Oct-2024 15:49:11.523 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\chanb\AppData\Local\Microsoft\WindowsApps;C:\Users\chanb\AppData\Local\GitHubDesktop\bin;C:\Users\chanb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\chanb\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin;C:\Users\chanb\.dotnet\tools;.]
+16-Oct-2024 15:49:12.651 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Oct-2024 15:49:12.703 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1975] milliseconds
+16-Oct-2024 15:49:12.819 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Oct-2024 15:49:12.820 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.28]
+16-Oct-2024 15:49:12.838 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\Web.xml]
+16-Oct-2024 15:49:12.870 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Web] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\Web.xml] has been ignored
+16-Oct-2024 15:49:14.819 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:14.975 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\Web.xml] has finished in [2,137] ms
+16-Oct-2024 15:49:14.976 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\docs]
+16-Oct-2024 15:49:15.090 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:15.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\docs] has finished in [121] ms
+16-Oct-2024 15:49:15.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\examples]
+16-Oct-2024 15:49:16.423 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:16.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\examples] has finished in [1,610] ms
+16-Oct-2024 15:49:16.709 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\host-manager]
+16-Oct-2024 15:49:17.091 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:17.135 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\host-manager] has finished in [426] ms
+16-Oct-2024 15:49:17.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\manager]
+16-Oct-2024 15:49:17.370 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:17.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\manager] has finished in [243] ms
+16-Oct-2024 15:49:17.380 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\ROOT]
+16-Oct-2024 15:49:17.631 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:49:17.640 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\webapps\ROOT] has finished in [259] ms
+16-Oct-2024 15:49:17.667 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Oct-2024 15:49:17.713 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5007] milliseconds
+16-Oct-2024 15:49:17.988 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:49:17.990 WARNING [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:49:18.052 SEVERE [http-nio-8080-exec-5] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:49:18.101 SEVERE [http-nio-8080-exec-5] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:49:18.537 SEVERE [http-nio-8080-exec-5] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:49:18.564 SEVERE [http-nio-8080-exec-5] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:49:18.566 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:49:18.567 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:49:18.596 INFO [http-nio-8080-exec-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [608] ms
+16-Oct-2024 15:49:57.012 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/ApexCare]
+16-Oct-2024 15:49:57.324 SEVERE [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1469)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1435)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1665)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:973)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1172)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1176)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1154)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:49:57.325 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1469)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1435)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1665)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:973)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1172)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1176)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1154)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:49:57.392 SEVERE [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:49:58.155 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:49:58.163 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:49:58.165 SEVERE [Catalina-utility-1] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:50:04.696 INFO [http-nio-8080-exec-11] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:50:05.213 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:50:05.267 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:50:05.271 WARNING [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:50:05.336 SEVERE [http-nio-8080-exec-1] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:50:05.375 SEVERE [http-nio-8080-exec-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:50:05.694 SEVERE [http-nio-8080-exec-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:50:05.731 SEVERE [http-nio-8080-exec-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:50:05.732 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:50:05.733 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:50:05.738 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [471] ms
+16-Oct-2024 15:50:42.574 INFO [http-nio-8080-exec-13] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:50:43.078 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:50:43.106 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:50:43.109 WARNING [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:50:43.161 SEVERE [http-nio-8080-exec-4] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:50:43.189 SEVERE [http-nio-8080-exec-4] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:50:43.307 SEVERE [http-nio-8080-exec-4] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:50:43.332 SEVERE [http-nio-8080-exec-4] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:50:43.336 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:50:43.341 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:50:43.356 INFO [http-nio-8080-exec-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [249] ms
+16-Oct-2024 15:52:23.339 INFO [http-nio-8080-exec-20] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:52:23.857 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:52:23.892 INFO [http-nio-8080-exec-16] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:52:23.893 WARNING [http-nio-8080-exec-16] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:52:23.933 SEVERE [http-nio-8080-exec-16] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:23.975 SEVERE [http-nio-8080-exec-16] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:24.263 SEVERE [http-nio-8080-exec-16] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:52:24.308 SEVERE [http-nio-8080-exec-16] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:52:24.312 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:52:24.316 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:52:24.323 INFO [http-nio-8080-exec-16] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [431] ms
+16-Oct-2024 15:52:24.668 INFO [http-nio-8080-exec-2] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:52:25.187 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:52:25.210 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:52:25.212 WARNING [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:52:25.244 SEVERE [http-nio-8080-exec-3] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:25.271 SEVERE [http-nio-8080-exec-3] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:25.360 SEVERE [http-nio-8080-exec-3] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:52:25.389 SEVERE [http-nio-8080-exec-3] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:52:25.390 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:52:25.392 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:52:25.413 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [201] ms
+16-Oct-2024 15:52:29.671 INFO [http-nio-8080-exec-21] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:52:30.175 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:52:30.206 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:52:30.207 WARNING [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:52:30.247 SEVERE [http-nio-8080-exec-20] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [2] column [2]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:30.281 SEVERE [http-nio-8080-exec-20] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at [file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/build/web/WEB-INF/web.xml; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:862)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+		at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1236)
+		at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:961)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4330)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:484)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1703)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1445)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:939)
+		at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:314)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:598)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+16-Oct-2024 15:52:30.373 SEVERE [http-nio-8080-exec-20] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line [2] column [2]
+16-Oct-2024 15:52:30.399 SEVERE [http-nio-8080-exec-20] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+16-Oct-2024 15:52:30.402 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+16-Oct-2024 15:52:30.403 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardContext.startInternal Context [/ApexCare] startup failed due to previous errors
+16-Oct-2024 15:52:30.411 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [204] ms
+16-Oct-2024 15:52:47.202 INFO [http-nio-8080-exec-10] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after stop() had already been called. The second call will be ignored.
+16-Oct-2024 15:52:47.709 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:52:47.736 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:52:47.738 WARNING [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:52:48.874 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/ROOT] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.875 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/Web] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.883 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.886 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.888 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.889 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.891 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:48.893 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.238 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.249 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.254 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.256 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.262 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.265 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.711 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:52:49.798 WARNING [http-nio-8080-exec-12] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:49.803 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [2,067] ms
+16-Oct-2024 15:52:50.316 INFO [http-nio-8080-exec-6] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 15:52:50.363 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 15:52:50.366 WARNING [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 15:52:51.140 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.svg] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.156 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.159 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.162 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.163 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.166 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.634 INFO [http-nio-8080-exec-20] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 15:52:51.691 WARNING [http-nio-8080-exec-20] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:51.695 INFO [http-nio-8080-exec-20] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [1,332] ms
+16-Oct-2024 15:52:51.699 INFO [http-nio-8080-exec-10] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after start() had already been called. The second call will be ignored.
+16-Oct-2024 15:52:52.196 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.467 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.468 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.469 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.471 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.500 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResources Unable to add the resource at [/WEB-INF/classes/META-INF/services/jakarta.el.ExpressionFactory] to the cache for web application [{1}] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.510 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.531 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.574 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.603 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.605 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.608 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/login.jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.703 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResources Unable to add the resource at [/WEB-INF/classes/META-INF/org.apache.jasper/tagPlugins.xml] to the cache for web application [{1}] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:52.704 WARNING [http-nio-8080-exec-15] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/tagPlugins.xml] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 15:52:54.673 WARNING [http-nio-8080-exec-18] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/css/loginStyle.css] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:00:59.794 WARNING [http-nio-8080-exec-27] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ApexCare] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+16-Oct-2024 16:01:01.013 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload Reloading context [/ApexCare]
+16-Oct-2024 16:01:01.371 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.svg] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.391 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.394 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.396 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.402 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.406 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.860 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.863 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.866 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.869 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.872 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:01.876 WARNING [http-nio-8080-exec-27] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:01:02.126 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 16:01:02.246 INFO [Catalina-utility-2] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/ApexCare]] after start() had already been called. The second call will be ignored.
+16-Oct-2024 16:01:02.288 INFO [Catalina-utility-2] org.apache.catalina.webresources.Cache.backgroundProcess The background cache eviction process was unable to free [10] percent of the cache for Context [/ApexCare] - consider increasing the maximum size of the cache. After eviction approximately [10,239] KiB of data remained in the cache.
+16-Oct-2024 16:01:12.810 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/ApexCare]
+16-Oct-2024 16:01:12.835 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+16-Oct-2024 16:01:12.836 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/ApexCare] in deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has been ignored
+16-Oct-2024 16:01:12.846 SEVERE [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:602)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:635)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:530)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:421)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1678)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:299)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:973)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1172)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1176)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1154)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@27d1f149]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:402)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4110)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4232)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		... 24 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:707)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 28 more
+16-Oct-2024 16:01:12.938 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\Catalina\localhost\ApexCare.xml] has finished in [102] ms
+16-Oct-2024 16:06:22.241 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/ApexCare]
+16-Oct-2024 16:06:24.403 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/favicon.ico] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.408 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.css] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.410 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.svg] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.411 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/WEB-INF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.415 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/WEB-INF/web.xml] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.417 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.421 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.423 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/ApexCare] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.426 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/docs] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.428 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/examples] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.429 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/host-manager] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.430 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.443 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/ROOT] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.446 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/Web] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.455 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.457 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.463 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.465 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.468 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.473 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.928 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.932 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.941 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.944 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.949 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:24.958 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:25.191 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 16:06:25.271 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:06:25.276 INFO [Catalina-utility-1] org.apache.catalina.webresources.Cache.backgroundProcess The background cache eviction process was unable to free [10] percent of the cache for Context [/ApexCare] - consider increasing the maximum size of the cache. After eviction approximately [10,239] KiB of data remained in the cache.
+16-Oct-2024 16:09:08.510 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload Reloading context [/ApexCare]
+16-Oct-2024 16:09:08.511 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/ApexCare] has started
+16-Oct-2024 16:09:16.964 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/favicon.ico] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.966 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/RELEASE-NOTES.txt] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.967 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.css] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.968 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/tomcat.svg] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.975 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/webapps/ROOT/WEB-INF/web.xml] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.984 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.986 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/ApexCare] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.990 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/docs] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.991 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/examples] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.992 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/host-manager] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.994 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:16.995 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/ROOT] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.115 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/Web] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.128 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.131 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.136 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.145 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.147 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.150 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/work/Catalina/localhost/manager/org/apache/jsp/WEB_002dINF/jsp/_401_jsp.java] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.765 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.770 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.800 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.802 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.806 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.808 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:17.974 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Oct-2024 16:09:18.072 WARNING [Catalina-utility-1] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/] to the cache for web application [/ApexCare] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+16-Oct-2024 16:09:18.073 INFO [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/ApexCare] is completed
+16-Oct-2024 16:09:18.080 INFO [Catalina-utility-1] org.apache.catalina.webresources.Cache.backgroundProcess The background cache eviction process was unable to free [10] percent of the cache for Context [/ApexCare] - consider increasing the maximum size of the cache. After eviction approximately [10,239] KiB of data remained in the cache.
+16-Oct-2024 16:10:10.229 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+16-Oct-2024 16:10:10.229 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Oct-2024 16:10:10.242 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Oct-2024 16:10:10.278 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Oct-2024 16:10:10.294 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+16-Oct-2024 16:10:28.397 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Server/Service/Engine/Host/Context/Resources/Cache]
+16-Oct-2024 16:10:28.426 SEVERE [main] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+	java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:115)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		... 22 more
+16-Oct-2024 16:10:28.429 WARNING [main] org.apache.catalina.startup.Catalina.parseServerXml Unable to load server configuration from [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\server.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/web/WEB-INF/lib/apache-tomcat-10.1.28/conf/server.xml; lineNumber: 64; columnNumber: 19; Error at line [64] column [19]: [Cannot invoke "String.startsWith(String)" because "tmp1" is null]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1953)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1985)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1036)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		... 18 more
+16-Oct-2024 16:10:28.481 SEVERE [main] org.apache.catalina.startup.Catalina.start Cannot start server, server instance is not configured
+16-Oct-2024 16:12:22.150 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Server/Service/Engine/Host/Context/Resources/Cache]
+16-Oct-2024 16:12:22.171 SEVERE [main] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+	java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:115)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		... 22 more
+16-Oct-2024 16:12:22.173 WARNING [main] org.apache.catalina.startup.Catalina.parseServerXml Unable to load server configuration from [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\server.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/web/WEB-INF/lib/apache-tomcat-10.1.28/conf/server.xml; lineNumber: 64; columnNumber: 19; Error at line [64] column [19]: [Cannot invoke "String.startsWith(String)" because "tmp1" is null]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1953)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1985)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1036)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		... 18 more
+16-Oct-2024 16:12:22.185 SEVERE [main] org.apache.catalina.startup.Catalina.start Cannot start server, server instance is not configured
+16-Oct-2024 16:13:50.393 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Server/Service/Engine/Host/Context/Resources/Cache]
+16-Oct-2024 16:13:50.423 SEVERE [main] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+	java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:115)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		... 22 more
+16-Oct-2024 16:13:50.427 WARNING [main] org.apache.catalina.startup.Catalina.parseServerXml Unable to load server configuration from [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\server.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/web/WEB-INF/lib/apache-tomcat-10.1.28/conf/server.xml; lineNumber: 64; columnNumber: 19; Error at line [64] column [19]: [Cannot invoke "String.startsWith(String)" because "tmp1" is null]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1953)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1985)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1036)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		... 18 more
+16-Oct-2024 16:13:50.435 SEVERE [main] org.apache.catalina.startup.Catalina.start Cannot start server, server instance is not configured
+16-Oct-2024 16:14:11.671 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Server/Service/Engine/Host/Context/Resources/Cache]
+16-Oct-2024 16:14:11.707 SEVERE [main] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+	java.lang.reflect.InvocationTargetException
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:115)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		... 22 more
+16-Oct-2024 16:14:11.711 WARNING [main] org.apache.catalina.startup.Catalina.parseServerXml Unable to load server configuration from [C:\Users\chanb\OneDrive\Documents\GitHub\ApexCare\ApexCare\web\WEB-INF\lib\apache-tomcat-10.1.28\conf\server.xml]
+	org.xml.sax.SAXParseException; systemId: file:/C:/Users/chanb/OneDrive/Documents/GitHub/ApexCare/ApexCare/web/WEB-INF/lib/apache-tomcat-10.1.28/conf/server.xml; lineNumber: 64; columnNumber: 19; Error at line [64] column [19]: [Cannot invoke "String.startsWith(String)" because "tmp1" is null]
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1953)
+		at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1985)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1036)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:618)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1728)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1522)
+		at org.apache.catalina.startup.Catalina.parseServerXml(Catalina.java:603)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:693)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:731)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.lang.NullPointerException: Cannot invoke "String.startsWith(String)" because "tmp1" is null
+		at org.apache.catalina.util.ContextName.<init>(ContextName.java:50)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:650)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:478)
+		at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:143)
+		at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1033)
+		... 18 more
+16-Oct-2024 16:14:11.785 SEVERE [main] org.apache.catalina.startup.Catalina.start Cannot start server, server instance is not configured
+16-Oct-2024 16:14:27.788 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+16-Oct-2024 16:14:27.794 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:653)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:393)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+16-Oct-2024 16:14:36.031 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+16-Oct-2024 16:14:36.039 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:653)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:393)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
