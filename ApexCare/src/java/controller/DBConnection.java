@@ -13,10 +13,16 @@ public class DBConnection {
     private Connection con;
 
     // Get connection to the database
-    public Connection getConnection() throws ClassNotFoundException, SQLException {
-        if (con == null || con.isClosed()) {
+    public Connection getConnection() throws ClassNotFoundException{
+        try{
             Class.forName(DRIVER);
-            con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            this.con = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            if(this.con != null){
+                System.out.println("Connected to DB");
+            }
+        }
+        catch(SQLException ex){
+            System.out.println("Could not connect: " + ex.getMessage());
         }
         return con;
     }
@@ -131,6 +137,39 @@ public void insertUser(User user, Clients clients) throws SQLException, ClassNot
 
             statement.close();
             con.close();
+        }catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+    }
+    
+    public void updateClient2(Clients client){
+        try{
+            con = getConnection();
+            
+            String updateQuery = "UPDATE public.tb_Client SET Username = ?, FirstName = ?, LastName = ?, Phone = ?, Email = ?, Address = ? WHERE ClientID = ?";
+
+            PreparedStatement statement = con.prepareStatement(updateQuery);
+
+            statement.setString(1, client.getUsername());
+            statement.setString(2, client.getFirstName());
+            statement.setString(3, client.getLastName());
+            statement.setString(4, client.getPhone());
+            statement.setString(5, client.getEmail());
+            statement.setString(6,client.getAddress());
+            statement.setInt(7, client.getClientID());
+
+            int rowsUpdated = statement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                System.out.println("Client updated successfully.");
+            } else {
+                System.out.println("No client found with the specified ID.");
+            }
+
+            statement.close();
+            con.close();
+            
         }catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

@@ -47,6 +47,7 @@ public class ProfileClientServlet extends HttpServlet {
         //response.getWriter().write(username + "; " + firstName + "; " + lastName + "; " + phone + "; " + email + "; " + address);
         
         DBConnection db = new DBConnection();
+        //db.updateClient(updatedClient);
         db.updateClient(updatedClient);
     }
 }
