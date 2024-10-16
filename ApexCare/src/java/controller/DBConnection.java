@@ -27,13 +27,6 @@ public class DBConnection {
         return con;
     }
 
-    // Close connection
-    public void closeConnection() throws SQLException {
-        if (con != null && !con.isClosed()) {
-            con.close();
-        }
-    }
-
     // Insert user and client data using the stored procedure
 public void insertUser(User user, Clients clients) throws SQLException, ClassNotFoundException {
     Connection connection = getConnection();
