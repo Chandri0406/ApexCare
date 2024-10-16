@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="models.User, models.Clients" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,24 +22,24 @@
             <h3 class="navHead">Profile</h3>
             <hr class="navLine">
             <ul>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/profileClient.jsp">Profile details</a></li>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/profileAgent.jsp">Agent Profile details</a></li>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/profileTechnician.jsp">Tech Profile details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileClient.jsp">Profile details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileAgent.jsp">Agent Profile details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileTechnician.jsp">Tech Profile details</a></li>
             </ul>
 
             <h3 class="navHead">Contracts</h3>
             <hr class="navLine">
             <ul>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/contractDetails.jsp">Contract Details</a></li>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/contractHistory.jsp">Contract History</a></li>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/manageContract.jsp">Manage Contract</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractDetails.jsp">Contract Details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractHistory.jsp">Contract History</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/manageContract.jsp">Manage Contract</a></li>
             </ul>
 
             <h3 class="navHead">Issues</h3>
             <hr class="navLine">
             <ul>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/feedback.jsp">Feedback Survey</a></li>
-                <li class="nav_items"><a href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/feedback.jsp">Feedback Survey</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
             </ul>
 
             <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
@@ -46,27 +47,34 @@
     </div>
 
     <!-- Main Content Area -->
-    <main>
-            <form method="post" action="profileClient">
-                <label>Username:</label>
-                <input type="text" name="username" value="${client.username}" /><br /><br />
+    <main class="mainContent">
+        <form method="post" action="${pageContext.request.contextPath}/profileClient">
+            <div class="fields">
+                <label class="lbl">Username:</label>
+                <input type="text" name="username" class="inputBox" value="${client.username}" />
+            </div>
+            <div class="fields">
+                <label class="lbl">First Name:</label>
+                <input type="text" name="firstName" class="inputBox" value="${client.firstName}" />
+            </div>
+            <div class="fields">
+                <label class="lbl">Last Name:</label>
+                <input type="text" name="lastName" class="inputBox" value="${client.lastName}" />
+            </div>
+            <div class="fields">
+                <label class="lbl">Phone:</label>
+                <input type="text" name="phone" class="inputBox" value="${client.phone}" />
+            </div>
+            <div class="fields">
+                <label class="lbl">Email:</label>
+                <input type="text" name="email" class="inputBox" value="${client.email}" />
+            </div>
+            <div class="fields">
+                <label class="lbl">Address:</label>
+                <input type="text" name="address" class="inputBox" value="${client.address}" />
+            </div>
 
-                <label>First Name:</label>
-                <input type="text" name="firstName" value="${client.firstName}" /><br /><br />
-
-                <label>Last Name:</label>
-                <input type="text" name="lastName" value="${client.lastName}" /><br /><br />
-
-                <label>Phone:</label>
-                <input type="text" name="phone" value="${client.phone}" /><br /><br />
-
-                <label>Email:</label>
-                <input type="text" name="email" value="${client.email}" /><br /><br />
-
-                <label>Address:</label>
-                <input type="text" name="address" value="${client.address}" /><br /><br />
-
-                <button type="submit" class="editProfile">Edit Profile</button>
+                <button type="submit" id="editProfile">Edit Profile</button>
             </form>
         </main>
 </body>

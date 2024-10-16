@@ -1,100 +1,128 @@
-html {
-    font-size: 14px;
-    position: relative;
-    min-height: 100%;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 body {
+    font-family: Sans-serif;
     background-color: #C7C7BF;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.fields {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    min-height: 80vh;
 }
 
 .headerBar {
     background-color: #14498B;
+    width: 100vw;
+    height: 80px;
     color: white;
     padding: 5px;
-    width: 100%;
     box-sizing: border-box;
+    align-content: center;
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     vertical-align: middle;
 }
 
 .headTitle {
-    font-size: 1.5rem;
+    font-size: 35px;
     font-weight: bold;
     margin-left: 15px;
+    margin-top: 40px;
+    vertical-align: middle;
 }
 
 .navBox {
     width: 250px;
     background-color: #E7E7E6;
-    padding: 20px;
+    box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
+    padding: 10px;
     flex-shrink: 0;
-}
-
-main {
-    flex-grow: 1; /* Makes the main content take up the remaining space */
-    padding: 20px;
-    background-color: #E7E7E6;
-    border: 1px solid black;
+    margin: 15px;
 }
 
 .navHead {
     color: #02050A;
     margin-bottom: 0;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .navLine {
-    border: 1px solid #F6BF41;
+    border: 2px solid #F6BF41;
+    width: 100%;
+    justify-self: center;
 }
 
-.nav_items a {
+ul {
+    list-style-type:none;
+}
+
+.nav_items  {
     color: #02050A;
+    padding: 2px;
     font-size: 16px;
     text-decoration: none;
+    margin-left: -10px;
 }
 
-.nav_items a:hover {
+.nav_items:hover {
     background-color: #14498B;
+    color: white;
 }
 
 .logout_btn {
     color: #14498B;
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
-    margin-top: 20px;
+    margin: 25px;
+    margin-top: 80px;
     display: block;
-    align-self: center;
+    text-align: center;
+}
+
+.logout_btn:hover {
+    color: #002047;
 }
 
 .mainContent {
+    flex-grow: 1;
     background-color: #E7E7E6;
-    border: 1px solid black;
+    box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
     color: #02050A;
+    margin: 15px;
+    padding: 10px;
+}
+
+.lbl{
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: table-cell;
+    width: 180px;
+}
+
+.fields{
+    margin: 30px;
+    display: table;
+    align-content: center;
+}
+
+.inputBox{
+    display: table-cell;
+    margin-left: 20px;
+    font-size: 17px;
+    background: #D7D7D5;
+    box-shadow: 1px 1px 4px #14498B;
 }
 
 #editProfile {
-    background-color: #ffcc00; 
+    background-color: #F6BF41; 
     border: none; 
     padding: 10px 20px; 
     cursor: pointer; 
     float: right;
+    margin: 60px;
 }

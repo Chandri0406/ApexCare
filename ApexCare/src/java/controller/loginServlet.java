@@ -57,7 +57,7 @@ public class loginServlet extends HttpServlet {
     private boolean fetchData(String username, String password) throws SQLException, ClassNotFoundException {
        Connection conn = dbconn.getConnection();
         try (
-             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM \"tb_User\" WHERE \"Username\" = ? AND \"Password\" = ?")) {
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM \"tb_User\" WHERE \"Username\" = ? AND \"Password\" = ?")) {
             stmt.setString(1, username);
             stmt.setString(2, password);
 
