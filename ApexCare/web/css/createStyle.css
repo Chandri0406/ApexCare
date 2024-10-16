@@ -11,8 +11,8 @@ body {
 
 /* BG */
 .bg {
-    width: 602px; /* or 602px for create user page */
-    height: 725px; /* or 725px for create user page */
+    width: 550px; /* or 602px for create user page */
+    height: 700px; /* or 725px for create user page */
     background: #C7C7BF;
     box-shadow: 5px 5px 4px rgba(0, 34, 78, 0.39);
     display: flex;             /* Enable flexbox for inner content */
@@ -23,17 +23,18 @@ body {
 
 /* Buttons */
 .btn {
-    width: 160px; /* or 161.32px for create user page */
-    height: 44px; /* or 43.56px for create user page */
-    background: #F6BF41; /* or #70706C for create user page */
-    margin-top: 20px;    /* Add margin above button */
+    width: 150px; 
+    height: 40px;
+    background: #F6BF41; 
+    margin: 20px;
+    align-self: center;
 }
 
 /* Label styles */
 #lgLabel {
     color: #4376AB;
     font-size: 40px;
-    align-self: center;         /* Center the label */
+    align-self: center;        /* Center the label */
     margin-bottom: 10px;       /* Add space below the label */
 }
 
@@ -47,7 +48,7 @@ body {
 }
 
 /* Labels */
-.Username, .Password, .FirstName, .LastName, .Phone, .Email, .CEmail, .CPassword {
+.lbl {
     width: 98px; /* or adjust based on need */
     height: 17px;
     font-weight: 400;
@@ -58,7 +59,7 @@ body {
 }
 
 /* Validation Messages */
-.UsernameValidation, .PasswordValidation, .EmailValidation {
+.Validation {
     width: 395px;
     height: 26px;
     font-weight: 400;

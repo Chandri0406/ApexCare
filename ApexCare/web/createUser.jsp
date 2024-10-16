@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="models.User, models.Clients" %> <!-- Replace with actual package -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,50 +13,52 @@
     <form action="createUser" method="post">
 
         <div>
-            <label for="firstName" class="lbl">First Name: </label> 
+            <label for="firstName" class="lbl">First Name: </label> <br>
             <input type="text" name="firstName" class="inputBox" required />
         </div>
 
         <div>
-            <label for="lastName" class="lbl">Last Name: </label> 
+            <label for="lastName" class="lbl">Last Name: </label> <br>
             <input type="text" name="lastName" class="inputBox" required />
         </div>
 
         <div>
-            <label for="phone" class="lbl">Phone: </label> 
+            <label for="phone" class="lbl">Phone: </label> <br>
             <input type="text" name="phone" class="inputBox" required />
         </div>
 
         <div>
-            <label for="email" class="lbl">Email: </label> 
+            <label for="email" class="lbl">Email: </label> <br>
             <input type="email" name="email" class="inputBox" required id="email" />
         </div>
 
         <div>
-            <label for="confirmEmail" class="lbl">Confirm Email: </label> 
-            <input type="email" name="confirmEmail" required id="confirmEmail" class="inputBox" />
-            <span class="EmailValidation error-message" id="emailError"></span> 
+            <label for="confirmEmail" class="lbl">Confirm Email: </label> <br>
+            <input type="email" name="confirmEmail" required id="confirmEmail" class="inputBox" /><br>
+            <span class="Validation error-message" id="emailError"></span> 
         </div>
 
         <div>
-            <label for="address" class="lbl">Address: </label> 
+            <label for="address" class="lbl">Address: </label> <br>
             <input type="text" name="address" required class="inputBox" />
         </div>
 
         <div>
-            <label for="username" class="lbl">Username: </label> 
+            <label for="username" class="lbl">Username: </label> <br>
             <input type="text" name="username" required class="inputBox" />
         </div>
 
         <div>
-            <label for="password" class="lbl">Password: </label> 
+            <label for="password" class="lbl">Password: </label> <br>
             <input type="password" name="password" required id="password" class="inputBox" />
+            <input type="checkbox" onclick="showPassword()">Show Password<br>
         </div>
 
         <div>
-            <label for="confirmPassword" class="lbl">Confirm Password: </label> 
+            <label for="confirmPassword" class="lbl">Confirm Password: </label> <br>
             <input type="password" name="confirmPassword" required id="confirmPassword" class="inputBox" />
-            <span class="PasswordValidation error-message" id="passwordError"></span> 
+            <input type="checkbox" onclick="showPassword()">Show Password<br>
+            <span class="Validation error-message" id="passwordError"></span>
         </div>
 
         <button type="submit" class="btn">Sign Up</button>
@@ -96,6 +97,15 @@
             passwordError.textContent = "";
         }
     }
+    
+    function showPassword() {
+    var x = document.getElementById("myInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      } 
 
     // Prevent form submission if there are validation errors
     document.getElementById('signupForm').addEventListener('submit', function (event) {

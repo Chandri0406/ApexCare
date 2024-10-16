@@ -93,7 +93,7 @@ public class CreateUserServlet extends HttpServlet {
     }
 
     public void insertUser(User user, Clients client) throws SQLException {
-        String sql = "{Call sp_insertclient(?, ?, ?, ?, ?, ?, ?)}";
+        String sql = "";
         
         try (
                 PreparedStatement stmt = conn.prepareStatement(sql)) {

@@ -18,16 +18,17 @@
 
         <div>
             <label class="lbl">Password</label>
-            <input type="password" name="Password" class="inputBox" required>
+            <input type="password" name="Password"  id="myInput" class="inputBox" required>
+            <input type="checkbox" onclick="showPassword()">Show Password
         </div>
                     
         <div>
             <label class="lbl">Role</label>
             <select name="role" class="inputBox">
-                <option class="lbl" value="">Choose a Role</option>
-                <option class="lbl" value="Agent">Agent</option>
-                <option class="lbl" value="Client">Client</option>
-                <option class="lbl" value="Technician">Technician</option>
+                <option class="lbl" name="defualt" value="">Choose a Role</option>
+                <option class="lbl" name="Agent" value="Agent">Agent</option>
+                <option class="lbl" name="Client" value="Client">Client</option>
+                <option class="lbl" name="Technician" value="Technician">Technician</option>
             </select>
         </div>
                     
@@ -41,8 +42,20 @@
     </form>
 
     <div>
-        Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp"><u>Create an account</u></a>
+        Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp">Create an account</a>
+        <a href="${pageContext.request.contextPath}/profileClient.jsp">Profile</a>
     </div>
 </div>
+    
+    <script>
+        function showPassword() {
+            var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                  x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+              } 
+    </script>
 </body>
 </html>
