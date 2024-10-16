@@ -7,10 +7,10 @@ public class User {
     private String role;
 
     // Public constructor
-    public User(String username, String password, String role) {
-        this.username = username;
-        this.password = password; // Password hashing can be added later
-        this.role = role;
+    public User(String Username, String Password, String Role) {
+        this.username = Username;
+        this.password = Password; // Password hashing can be added later
+        this.role = Role;
     }
 
     public User(String username, String password) {

@@ -1,56 +1,72 @@
 /* General styles */
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
+    background-color: #3D3D3D;
+    display: flex;               /* Enable flexbox */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 100vh;              /* Full viewport height */
+    margin: 0;                  /* Remove default margin */
 }
 
 /* BG */
-.bg {
-    position: absolute;
-    width: 306px; /* or 602px for create user page */
-    height: 370px; /* or 725px for create user page */
+#loginBody {
+    width: 306px;
+    height: 370px;
+    padding: 10px;
     background: #C7C7BF;
     box-shadow: 5px 5px 4px rgba(0, 34, 78, 0.39);
+    display: flex;              /* Enable flexbox for inner content */
+    flex-direction: column;     /* Arrange children in a column */
+    align-items: center;        /* Center children horizontally */
+}
+
+/* Link styles */
+a {
+    color: #4376AB;
 }
 
 /* Buttons */
-.btn {
-    position: absolute;
-    width: 82px; /* or 161.32px for create user page */
-    height: 27px; /* or 43.56px for create user page */
-    background: #F6BF41; /* or #70706C for create user page */
+#btn {
+    width: 82px; 
+    height: 27px; 
+    background: #F6BF41;
+    color: black;
+    align-self: center;         /* Center the button */
+}
+
+/* Label styles */
+#lgLabel {
+    color: #4376AB;
+    font-size: 40px;
+    align-self: center;         /* Center the label */
+    margin-bottom: 10px;       /* Add space below the label */
 }
 
 /* Input Fields */
-.Rectangle3,
-.Rectangle4 {
-    position: absolute;
-    width: 207px; /* or 405.04px for create user page */
-    height: 26px; /* or 21px for create user page */
-    background: #D7D7D7; /* or #D9D9D9 for create user page */
+select, .inputBox {
+    width: 207px; 
+    height: 26px; 
+    background: #D7D7D7; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;       /* Add space below the input fields */
 }
 
 /* Labels */
-.Username, .Password, .FirstName, .LastName, .Phone, .Email, .CEmail, .CPassword {
-    position: absolute;
+.lbl {
     width: 98px; /* or adjust based on need */
     height: 17px;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 15px;
     color: #000000;
 }
 
 /* Validation Messages */
-.UsernameValidation, .PasswordValidation, .EmailValidation {
-    position: absolute;
-    width: 202px; /* or 395.26px for create user page */
-    height: 26px; /* or adjust based on need */
+.Validation {
+    width: 202px; 
+    height: 26px; 
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #EB0000;
 }
-
-/* More CSS styles for other elements can be added here based on the provided CSS */

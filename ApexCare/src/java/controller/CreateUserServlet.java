@@ -13,6 +13,12 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/createUser")
 public class CreateUserServlet extends HttpServlet {
+    
+     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Display login page
+        request.getRequestDispatcher("/createUser.jsp").forward(request, response);
+    }
+    
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Retrieve form data
         String firstName = request.getParameter("firstName");
@@ -56,7 +62,7 @@ public class CreateUserServlet extends HttpServlet {
             db.insertUser(user, clients);
 
             // Redirect to login page after successful signup
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("/login.jsp");
         } catch (Exception ex) {
             request.setAttribute("errorMessage", "An error occurred while creating the user.");
             request.getRequestDispatcher("createUser.jsp").forward(request, response);

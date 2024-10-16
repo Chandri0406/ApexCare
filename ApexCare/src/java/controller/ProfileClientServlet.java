@@ -28,7 +28,7 @@ public class ProfileClientServlet extends HttpServlet {
 
         // Set the client data as request attributes to be displayed in the JSP
         request.setAttribute("client", client);
-        request.getRequestDispatcher("/pages/profileClient.jsp").forward(request, response);
+        request.getRequestDispatcher("/profileClient.jsp").forward(request, response);
     }
 
     @Override
