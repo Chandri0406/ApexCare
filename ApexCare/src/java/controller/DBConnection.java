@@ -106,4 +106,34 @@ public void insertUser(User user, Clients clients) throws SQLException, ClassNot
 
         return user;
     }
+    
+    public void updateClient(Clients client){
+        try{
+            con = getConnection();
+            
+            CallableStatement statement = con.prepareCall("{call sp_updateclient(?, ?, ?, ?, ?, ?, ?)}");
+
+            statement.setInt(1, client.getClientID());
+            statement.setString(2, client.getUsername());
+            statement.setString(3, client.getFirstName());
+            statement.setString(4, client.getLastName());
+            statement.setString(5, client.getPhone());
+            statement.setString(6, client.getEmail());
+            statement.setString(7, client.getAddress());
+
+            int rowsUpdated = statement.executeUpdate();
+
+            if (rowsUpdated > 0) {
+                System.out.println("Client updated successfully.");
+            } else {
+                System.out.println("No client found with the specified ID.");
+            }
+
+            statement.close();
+            con.close();
+        }catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+    }
 }

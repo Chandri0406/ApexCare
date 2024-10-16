@@ -19,6 +19,7 @@ public class ProfileClientServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Populate test data
         client = new Clients();
+        client.setClientID(13);
         client.setUsername("AJones777");
         client.setFirstName("Alex");
         client.setLastName("Jones");
@@ -40,8 +41,12 @@ public class ProfileClientServlet extends HttpServlet {
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
+        Clients updatedClient = new Clients(client.getClientID(), username, firstName, lastName, address, phone, email);
 
         // For testing purposes, just return the values as a response
-        response.getWriter().write(username + "; " + firstName + "; " + lastName + "; " + phone + "; " + email + "; " + address);
+        //response.getWriter().write(username + "; " + firstName + "; " + lastName + "; " + phone + "; " + email + "; " + address);
+        
+        DBConnection db = new DBConnection();
+        db.updateClient(updatedClient);
     }
 }
