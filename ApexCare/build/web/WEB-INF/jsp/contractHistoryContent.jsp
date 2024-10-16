@@ -22,14 +22,7 @@
                 <label>Client ID:</label>
                 <input type="text" value="${selectedContract.clientID}" readonly /><br /><br />
             </div>
-            <div class="form-group">
-                <label>Start Date:</label>
-                <input type="date" value="${fn:substring(selectedContract.startDate, 0, 10)}" readonly /><br /><br />
-            </div>
-            <div class="form-group">
-                <label>End Date:</label>
-                <input type="date" value="${fn:substring(selectedContract.endDate, 0, 10)}" readonly /><br /><br />
-            </div>
+            
             <div class="form-group">
                 <label>Status:</label>
                 <input type="text" value="${selectedContract.status}" readonly /><br /><br />
