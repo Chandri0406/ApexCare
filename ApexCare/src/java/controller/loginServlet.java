@@ -12,12 +12,14 @@ import jakarta.servlet.http.HttpSession;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import models.Clients;
 
 @WebServlet("/login")
 public class loginServlet extends HttpServlet {
     Connection conn;
     private DBConnection dbconn = new DBConnection();
     User user;
+    private Clients client;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,6 +44,13 @@ public class loginServlet extends HttpServlet {
                 if ("Agent".equalsIgnoreCase(role)) {
                     response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
                 } else if ("Client".equalsIgnoreCase(role)) {
+                    client = getClientByUsername(username);
+
+                    session.setAttribute("firstname", client.getFirstName());
+                    session.setAttribute("lastname", client.getLastName());
+                    session.setAttribute("phone", client.getPhone());
+                    session.setAttribute("email", client.getEmail());
+                    session.setAttribute("address", client.getAddress()); 
                     response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
                 } else if ("Technician".equalsIgnoreCase(role)) {
                     response.sendRedirect(request.getContextPath() + "/profileTechnician.jsp");
@@ -81,5 +90,36 @@ public class loginServlet extends HttpServlet {
             }
         }
         return false; // Login failed
+    }
+    
+    public Clients getClientByUsername(String username) throws ClassNotFoundException {
+        conn = dbconn.getConnection();
+        client = null;
+        String query = "SELECT * FROM \"tb_Client\" WHERE \"Username\" = ?" ;
+
+        try (
+                PreparedStatement stmt = conn.prepareStatement(query)) 
+        {
+            stmt.setString(1, username);
+            try (
+                    ResultSet rs = stmt.executeQuery()) 
+            {
+                if (rs.next()) 
+                {
+                    client = new Clients();
+                    client.setClientID(rs.getInt("ClientID"));
+                    client.setUsername(rs.getString("Username"));
+                    client.setFirstName(rs.getString("FirstName"));
+                    client.setLastName(rs.getString("LastName"));
+                    client.setPhone(rs.getString("Phone"));
+                    client.setEmail(rs.getString("Email"));
+                    client.setAddress(rs.getString("Address"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return client;
     }
 }
