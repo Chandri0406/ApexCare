@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @WebServlet("/feedbackServlet")
-public class feedbackServlet extends HttpServlet {
+public class FeedbackServlet extends HttpServlet {
 
     public void addFeedback(Feedback feedback) throws SQLException {
         Connection con = null;
@@ -23,7 +23,7 @@ public class feedbackServlet extends HttpServlet {
         try {
             con = dbcon.getConnection();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(complaintServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ComplaintServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         String sql = "INSERT INTO \"tb_ServiceFeedback\"(\"ClientID\", \"IssueID\", \"Rating\", \"Comments\", \"DateProvided\")"
                 + " VALUES (?, ?, ?, ?, ?)";
