@@ -63,7 +63,6 @@ public void insertUser(User user, Clients clients) throws SQLException, ClassNot
         throw e;
     } finally {
         if (stmt != null) stmt.close();
-        closeConnection();
     }
 }
 
@@ -100,7 +99,6 @@ public void insertUser(User user, Clients clients) throws SQLException, ClassNot
         } finally {
             if (rs != null) rs.close();
             if (stmt != null) stmt.close();
-            closeConnection();
         }
 
         return user;
