@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Profile</title>
-     <link rel="stylesheet" type="text/css" href="">
+     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/technicianStyle.css">
 </head>
 <body>
     <!-- Top Bar -->
