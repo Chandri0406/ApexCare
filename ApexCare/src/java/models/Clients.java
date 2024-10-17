@@ -1,9 +1,6 @@
 package models;
 
-
-
 public class Clients {
-    // UML Client Model 
     private int clientID;
     private String username;
     private String firstName;
@@ -13,8 +10,7 @@ public class Clients {
     private String email;
 
     // Default constructor
-    public Clients() {
-    }
+    public Clients() {}
 
     // Constructor with parameters
     public Clients(int clientID, String username, String firstName, String lastName, String address, String phone, String email) {
@@ -26,18 +22,7 @@ public class Clients {
         this.phone = phone;
         this.email = email;
     }
-
-    // Constructor for creating a client without clientID
-    public Clients(String firstName, String lastName, String phone, String email, String address, String username) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-        this.username = username;
-    }
-
-    // Getters and setters
+    
     public int getClientID() {
         return clientID;
     }
