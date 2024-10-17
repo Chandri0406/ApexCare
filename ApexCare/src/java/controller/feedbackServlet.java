@@ -1,74 +1,88 @@
 package controller;
 
+import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import models.Feedback;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-/**
- *
- * @author peter
- */
+@WebServlet("/feedbackServlet")
 public class feedbackServlet extends HttpServlet {
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet feedbackServlet</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet feedbackServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+    public void addFeedback(Feedback feedback) throws SQLException {
+        Connection con = null;
+        DBConnection dbcon = new DBConnection();
+        try {
+            con = dbcon.getConnection();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(complaintServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        String sql = "INSERT INTO \"tb_ServiceFeedback\"(\"ClientID\", \"IssueID\", \"Rating\", \"Comments\", \"DateProvided\")"
+                + " VALUES (?, ?, ?, ?, ?)";
+
+        try (PreparedStatement pstmt = con.prepareStatement(sql)) {
+            // Set parameters
+            pstmt.setInt(1, feedback.getClientID());
+            pstmt.setString(2, feedback.getIssueID());
+            pstmt.setInt(3, feedback.getRating());  // Convert LocalDate to SQL Date
+            pstmt.setString(4, feedback.getComments());
+            pstmt.setDate(5, Date.valueOf(feedback.getDateProvided()));  // Convert LocalDate to SQL Date
+
+            // Execute the insert query
+            pstmt.executeUpdate();
+        } catch (SQLException ex) {
+            System.out.println("Error submitting feedback: " + ex.getMessage());
+            throw new SQLException("Failed to submit feedback", ex);
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        int clientID = Integer.parseInt(request.getParameter("clientID"));
+        String issueID = request.getParameter("issueID");
+        int rating = Integer.parseInt(request.getParameter("rating"));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate dateProvided = LocalDate.parse(request.getParameter("dateProvided"), formatter);
+        String comments = request.getParameter("comments");
+
+        boolean isComplaintSent = false;
+
+        try {
+            // Create a Complaint object
+            Feedback feedback = new Feedback();
+            feedback.setClientID(clientID);
+            feedback.setIssueID(issueID);
+            feedback.setRating(rating);
+            feedback.setDateProvided(dateProvided);
+            feedback.setComments(comments);
+            
+            
+
+            // Add the complaint to the database
+            addFeedback(feedback);
+
+            isComplaintSent = true;  // Mark as successfully sent
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            // Set an error message in case of failure
+            request.setAttribute("errorMessage", "An error occurred while sending the complaint: " + ex.getMessage());
+        }
+
+        // Set attributes to send back to JSP
+        request.setAttribute("isComplaintSent", isComplaintSent);
+
+        // Forward the request back to the JSP page
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/complaint.jsp");
+        dispatcher.forward(request, response);
     }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
+    
 }
