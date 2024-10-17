@@ -21,12 +21,11 @@
             <h3 class="navHead">Profile</h3>
             <hr class="navLine">
             <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileClient.jsp">Profile details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileAgent.jsp">Agent Profile details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileTechnician.jsp">Tech Profile details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileAgent.jsp">Profile details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/dasboard.jsp">Dashboard</a></li>
             </ul>
 
-            <h3 class="navHead">Contracts</h3>
+            <h3 class="navHead">Clients</h3>
             <hr class="navLine">
             <ul>
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/contractDetails.jsp">Contract Details</a></li>

@@ -46,7 +46,7 @@
             </div>
 
             <div class="fields">
-                <button id="btn" type="submit">Login</button>
+                <button id="btn" type="submit" action="/">Login</button>
             </div>
         
     </form>

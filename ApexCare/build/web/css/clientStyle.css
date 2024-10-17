@@ -5,7 +5,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .headerBar {
@@ -38,7 +38,7 @@ body {
     box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
     padding: 10px;
     flex-shrink: 0;
-    margin: 15px;
+    margin: 10px;
 }
 
 .navHead {
@@ -56,6 +56,10 @@ body {
 
 ul {
     list-style-type:none;
+}
+
+li {
+    margin: 5px;
 }
 
 .nav_items  {
@@ -78,11 +82,17 @@ ul {
     font-size: 20px;
     margin: 25px;
     margin-top: 80px;
+    padding: 20px;
     display: block;
-    text-align: center;
+    border: none;
+}
+
+button:hover {
+    background-color: none;
 }
 
 .logout_btn:hover {
+    background-color: none;
     color: #002047;
 }
 
@@ -91,7 +101,7 @@ ul {
     background-color: #E7E7E6;
     box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
     color: #02050A;
-    margin: 15px;
+    margin: 10px;
     padding: 10px;
 }
 

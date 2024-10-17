@@ -41,7 +41,10 @@
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
             </ul>
 
-            <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
+            <form action="${pageContext.request.contextPath}/logout" method="get" style="display: inline;">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
+
         </nav>
     </div>
 
@@ -59,19 +62,25 @@
                     <th>Email</th>
                     <th>Address</th>
                 </tr>
-                <tr>
-                    <td>${client.username}</td>
-                    <td>${client.firstName}</td>
-                    <td>${client.lastName}</td>
-                    <td>${client.phone}</td>
-                    <td>${client.email}</td>
-                    <td>${client.address}</td>
-                </tr>
+               <c:if test="${not empty client}">
+                    <tr>
+                        <td>${username}</td>
+                        <td>${firstName}</td>
+                        <td>${lastName}</td>
+                        <td>${phone}</td>
+                        <td>${email}</td>
+                        <td>${address}</td>
+                    </tr>
+                </c:if>
+                <c:if test="${empty client}">
+                    <tr>
+                        <td colspan="6">Client information not available.</td>
+                    </tr>
+                </c:if>
             </table>
         </div>
         
-        
-        <form method="post" action="${pageContext.request.contextPath}/profileClient">
+        <form action="${pageContext.request.contextPath}/profileClient" method="post" >
             <div class="fields">
                 <label class="lbl">Username:</label>
                 <input type="text" name="username" class="inputBox" value="${client.username}" />

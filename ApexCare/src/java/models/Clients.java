@@ -8,7 +8,7 @@ public class Clients {
     private String address;
     private String phone;
     private String email;
-
+    
     // Default constructor
     public Clients() {}
 
