@@ -53,7 +53,7 @@
             
             <div class="fields">
                 <label for="clientID" class="lbl">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="${clientID}" readonly/>
             </div>
 
             <div class="fields">

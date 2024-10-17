@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import models.Feedback;
@@ -51,8 +52,17 @@ public class FeedbackServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
+        // Retrieve clientID from session
+        HttpSession session = request.getSession();
+        Integer clientID = (Integer) session.getAttribute("clientID");
 
-        int clientID = Integer.parseInt(request.getParameter("clientID"));
+        if (clientID == null) {
+            request.setAttribute("errorMessage", "Client is not logged in. Please log in.");
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+            return;  // Stop execution if client is not logged in
+        }
+    
         String issueID = request.getParameter("issueID");
         int rating = Integer.parseInt(request.getParameter("rating"));
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");

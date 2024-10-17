@@ -55,7 +55,7 @@
             
             <div class="fields">
                 <label for="clientID" class="lbl">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="${clientID}" readonly/>
             </div>
 
             <div class="fields">
@@ -66,6 +66,15 @@
             <div class="fields">
                 <label for="rating" class="lbl">Rating:</label>
                 <input type="number" name="rating" id="rating" class="inputBox" value="" />
+                <div>
+                <!-- Create 5 stars for rating -->
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(1)" data-value="1" alt="1 Star" id="star1">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(2)" data-value="2" alt="2 Stars" id="star2">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(3)" data-value="3" alt="3 Stars" id="star3">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(4)" data-value="4" alt="4 Stars" id="star4">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(5)" data-value="5" alt="5 Stars" id="star5">
+                </div>
+                    <input type="hidden" name="rating" id="rating" value="" />
             </div>
 
             <div class="fields">
@@ -82,6 +91,17 @@
         </form>
     </main>
             <script>
+                function setRating(rating) {
+                    // Update hidden input field with the selected rating
+                    document.getElementById('rating').value = rating;
+
+                    // Change the star images
+                    for (let i = 1; i <= 5; i++) {
+                        const star = document.getElementById('star' + i);
+                        star.src = (i <= rating) ? "${pageContext.request.contextPath}/images/starY.png" : "${pageContext.request.contextPath}/images/starB.png";
+                    }
+                }
+                
                  // Basic client-side validation for the form
                 function validateForm() {
                 var clientId = document.forms["feedbackForm"]["clientID"].value;

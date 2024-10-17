@@ -160,6 +160,10 @@ li {
     background: #F0A700;
 }
 
+.star{
+    
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navBox {

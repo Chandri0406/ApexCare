@@ -58,7 +58,8 @@ public class LoginServlet extends HttpServlet {
                     response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
                 } else if ("Client".equalsIgnoreCase(role)) {
                     client = getClientByUsername(username);
-
+                    
+                    session.setAttribute("clientID", client.getClientID());
                     session.setAttribute("firstname", client.getFirstName());
                     session.setAttribute("lastname", client.getLastName());
                     session.setAttribute("phone", client.getPhone());
