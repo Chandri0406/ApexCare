@@ -1,74 +1,82 @@
 package models;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Complaint {
-    private int complaintID;
-    private int clientID;
-    private String issueID;
-    private Date dateReported;
-    private Date dateResolved; // Nullable if not yet resolved
-    private String description;
+    public int ComplaintID;
+    public int ClientID;
+    public String IssueID;
+    public LocalDate DateReported;
+    public LocalDate DateResolved; // Nullable if not yet resolved
+    public String Description;
 
     // Constructor
-    public Complaint(int clientID, String issueID, String description, Date dateReported) {
-        this.clientID = clientID;
-        this.issueID = issueID;
-        this.description = description;
-        this.dateReported = dateReported;
+    public Complaint(int clientID, String issueID, LocalDate dateReported, LocalDate dateResolved, String description)
+        {
+            ClientID = clientID;
+            IssueID = issueID;
+            DateReported = dateReported;
+            DateResolved = dateResolved;
+            Description = description;
+        }
+
+    public Complaint() {
+        
     }
 
     // Getters and setters
     public int getComplaintID() {
-        return complaintID;
+        return ComplaintID;
     }
 
     public void setComplaintID(int complaintID) {
-        this.complaintID = complaintID;
+        this.ComplaintID = complaintID;
     }
 
     public int getClientID() {
-        return clientID;
+        return ClientID;
     }
 
     public void setClientID(int clientID) {
-        this.clientID = clientID;
+        this.ClientID = clientID;
     }
 
     public String getIssueID() {
-        return issueID;
+        return IssueID;
     }
 
     public void setIssueID(String issueID) {
-        this.issueID = issueID;
+        this.IssueID = issueID;
     }
 
-    public Date getDateReported() {
-        return dateReported;
+    public LocalDate getDateReported() {
+        return DateReported;
     }
 
-    public void setDateReported(Date dateReported) {
-        this.dateReported = dateReported;
+
+    public LocalDate getDateResolved() {
+        return DateResolved;
     }
 
-    public Date getDateResolved() {
-        return dateResolved;
-    }
-
-    public void setDateResolved(Date dateResolved) {
-        this.dateResolved = dateResolved;
-    }
 
     public String getDescription() {
-        return description;
+        return Description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.Description = description;
     }
 
     // Optional: Validation logic
     public boolean isResolved() {
-        return dateResolved != null;
+        return DateResolved != null;
+    }
+
+    public void setDateReported(LocalDate dateReported) {
+        this.DateReported = dateReported; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setDateResolved(LocalDate dateResolved) {
+        this.DateResolved = dateResolved; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

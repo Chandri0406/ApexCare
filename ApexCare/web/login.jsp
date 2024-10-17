@@ -42,6 +42,9 @@
     <div>
         Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp"><u>Create an account</u></a>
     </div>
+    <div>
+        Not a user? <a href="${pageContext.request.contextPath}/complaint.jsp"><u>send a complaint</u></a>
+    </div>
 </div>
 </body>
 </html>
