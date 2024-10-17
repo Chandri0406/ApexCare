@@ -1,7 +1,6 @@
 package models;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Complaint {
     public int ComplaintID;
@@ -22,7 +21,7 @@ public class Complaint {
         }
 
     public Complaint() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
 
     // Getters and setters
