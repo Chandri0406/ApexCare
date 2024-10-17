@@ -47,6 +47,30 @@
 
     <!-- Main Content Area -->
     <main class="mainContent">
+        <!-- Client Data Table -->
+        <div class="tableContainer">
+            <h3>Client Information</h3>
+            <table class="clientTable">
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>${client.username}</td>
+                    <td>${client.firstName}</td>
+                    <td>${client.lastName}</td>
+                    <td>${client.phone}</td>
+                    <td>${client.email}</td>
+                    <td>${client.address}</td>
+                </tr>
+            </table>
+        </div>
+        
+        
         <form method="post" action="${pageContext.request.contextPath}/profileClient">
             <div class="fields">
                 <label class="lbl">Username:</label>
