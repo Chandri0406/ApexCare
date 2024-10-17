@@ -26,7 +26,9 @@ public class CreateUserServlet extends HttpServlet {
         request.getRequestDispatcher("/createUser.jsp").forward(request, response);
     }
     
-  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+        throws ServletException, IOException {
+    
     // Retrieve form data
     String firstName = request.getParameter("firstName");
     String lastName = request.getParameter("lastName");
@@ -53,24 +55,27 @@ public class CreateUserServlet extends HttpServlet {
         isValid = false;
     }
 
-    // If validation fails, forward back to the JSP with error messages
+    // If validation fails, send back to the JSP with error messages
     if (!isValid) {
         request.setAttribute("errorMessage", errorMessage);
         request.getRequestDispatcher("/createUser.jsp").forward(request, response);
         return;
     }
 
-       // Insert user into the database if validation passes
+    // Insert user into the database if validation passes
     try {
         insertClient(username, password, firstName, lastName, phone, email, address);
-        // Redirect to login.jsp after successful user creation
+
+        // Set success message and redirect to login.jsp
+        request.getSession().setAttribute("successMessage", "User registered successfully! Please login.");
         response.sendRedirect(request.getContextPath() + "/login.jsp");
+
     } catch (Exception ex) {
-        // Handle errors and forward back with an error message
         request.setAttribute("errorMessage", "An error occurred while creating the user.");
         request.getRequestDispatcher("/createUser.jsp").forward(request, response);
     }
 }
+
 
     
     public boolean usernameExists(String username) throws SQLException {

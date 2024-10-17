@@ -12,6 +12,10 @@
         <servlet-name>ProfileClientServlet</servlet-name>
         <servlet-class>controller.ProfileClientServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>contractHistory</servlet-name>
+        <servlet-class>controller.ContractHistoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>ProfileClientServlet</servlet-name>
         <url-pattern>/ProfileClientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contractHistory</servlet-name>
+        <url-pattern>/contractHistory</url-pattern>
     </servlet-mapping>
 </web-app>
