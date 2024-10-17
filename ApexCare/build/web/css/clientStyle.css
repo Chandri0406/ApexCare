@@ -147,13 +147,13 @@ li {
 }
 
 #complaintbtn, #feedbackbtn {
-    width: 100%;
     padding: 8px;
     font-size: 17px;
     background: #F6BF41;
     color: black;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
 #complaintbtn:hover, #feedbackbtn:hover {

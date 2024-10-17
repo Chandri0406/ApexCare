@@ -78,7 +78,7 @@
                 <input type="date" name="dateProvided" id="dateProvided" class="inputBox" value="" />
             </div>
 
-            <button type="submit" class="feedbackbtn">Submit</button>
+            <button type="submit" id="feedbackbtn">Submit</button>
         </form>
     </main>
             <script>

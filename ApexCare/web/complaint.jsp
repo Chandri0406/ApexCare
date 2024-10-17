@@ -76,7 +76,7 @@
                 <input type="text" name="description" id="description" class="inputBox" value="" />
             </div>
 
-            <button type="submit" class="complaintbtn">Send Complaint</button>
+            <button type="submit" id="complaintbtn">Send Complaint</button>
         </form>
 
         <!-- Conditionally display the success message -->

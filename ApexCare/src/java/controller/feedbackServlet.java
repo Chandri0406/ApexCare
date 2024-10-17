@@ -16,6 +16,11 @@ import java.util.logging.Logger;
 
 @WebServlet("/feedbackServlet")
 public class FeedbackServlet extends HttpServlet {
+    
+     @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("feedback.jsp").forward(request, response);
+    }
 
     public void addFeedback(Feedback feedback) throws SQLException {
         Connection con = null;

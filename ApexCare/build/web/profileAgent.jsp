@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Profile</title>
-     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/clientStyle.css">
+     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/agentStyle.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -46,18 +46,18 @@
 
     <!-- Main Content Area -->
     <main class="mainContent">
-        <form method="post" action="${pageContext.request.contextPath}/profileClient">
+        <form method="post" action="${pageContext.request.contextPath}/profileAgent">
             <div class="fields">
                 <label class="lbl">Username:</label>
                 <input type="text" name="username" class="inputBox" value="${username}" />
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${firstName}" />
+                <input type="text" name="firstName" class="inputBox" value="${firstname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${lastName}" />
+                <input type="text" name="lastName" class="inputBox" value="${lastname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>

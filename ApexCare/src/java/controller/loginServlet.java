@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpSession;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import models.Clients;
+import models.*;
 
 /**
  *
@@ -24,6 +24,8 @@ public class LoginServlet extends HttpServlet {
     private DBConnection dbconn = new DBConnection();
     User user;
     private Clients client;
+    private ServiceAgent agent;
+    private Technician tech;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -46,6 +48,13 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("role", role); // Store role in session if needed
 
                 if ("Agent".equalsIgnoreCase(role)) {
+                    agent = getAgentByUsername(username);
+
+                    session.setAttribute("firstname", agent.getFirstName());
+                    session.setAttribute("lastname", agent.getLastName());
+                    session.setAttribute("phone", agent.getPhone());
+                    session.setAttribute("email", agent.getEmail());
+                    
                     response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
                 } else if ("Client".equalsIgnoreCase(role)) {
                     client = getClientByUsername(username);
@@ -57,6 +66,14 @@ public class LoginServlet extends HttpServlet {
                     session.setAttribute("address", client.getAddress()); 
                     response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
                 } else if ("Technician".equalsIgnoreCase(role)) {
+                    tech = getTechnicianByUsername(username);
+
+                    session.setAttribute("firstname", tech.getFirstName());
+                    session.setAttribute("lastname", tech.getLastName());
+                    session.setAttribute("phone", tech.getPhone());
+                    session.setAttribute("email", tech.getEmail());
+                    
+                    
                     response.sendRedirect(request.getContextPath() + "/profileTechnician.jsp");
                 } else {
                     // If no role is selected, return an error
@@ -125,5 +142,65 @@ public class LoginServlet extends HttpServlet {
         }
 
         return client;
+    }
+    
+    public ServiceAgent getAgentByUsername(String username) throws ClassNotFoundException {
+        conn = dbconn.getConnection();
+        client = null;
+        String query = "SELECT * FROM \"tb_ServiceAgent\" WHERE \"Username\" = ?" ;
+
+        try (
+                PreparedStatement stmt = conn.prepareStatement(query)) 
+        {
+            stmt.setString(1, username);
+            try (
+                    ResultSet rs = stmt.executeQuery()) 
+            {
+                if (rs.next()) 
+                {
+                    agent = new ServiceAgent();
+                    agent.setAgentID(rs.getString("AgentID"));
+                    agent.setUsername(rs.getString("Username"));
+                    agent.setFirstName(rs.getString("FirstName"));
+                    agent.setLastName(rs.getString("LastName"));
+                    agent.setPhone(rs.getString("Phone"));
+                    agent.setEmail(rs.getString("Email"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return agent;
+    }
+    
+    public Technician getTechnicianByUsername(String username) throws ClassNotFoundException {
+        conn = dbconn.getConnection();
+        client = null;
+        String query = "SELECT * FROM \"tb_Technician\" WHERE \"Username\" = ?" ;
+
+        try (
+                PreparedStatement stmt = conn.prepareStatement(query)) 
+        {
+            stmt.setString(1, username);
+            try (
+                    ResultSet rs = stmt.executeQuery()) 
+            {
+                if (rs.next()) 
+                {
+                    tech = new Technician();
+                    tech.setTechnicianID(rs.getString("TechnicianID"));
+                    tech.setUsername(rs.getString("Username"));
+                    tech.setFirstName(rs.getString("FirstName"));
+                    tech.setLastName(rs.getString("LastName"));
+                    tech.setPhone(rs.getString("Phone"));
+                    tech.setEmail(rs.getString("Email"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return tech;
     }
 }

@@ -11,6 +11,24 @@ body {
     height: 100vh;
 }
 
+#backBtn {
+     width: 140px; 
+    height: 30px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    background: #F6BF41;
+    color: black;
+    align-self: center;   
+    float: right;
+    display: inline;
+}
+
+#backLogo{
+    width: 16px;
+    background-color: #00224E;
+}
+
 /* BG */
 #bg {
     vertical-align: middle;
@@ -74,6 +92,7 @@ body {
     margin: 10px;
     background: #F6BF41;
     color: black;
+    float: left;
     align-self: center;         /* Center the button */
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Profile</title>
-     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/clientStyle.css">
+     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/techStyle.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -37,27 +37,27 @@
     </div>
 
     <!-- Main Content Area -->
-    <main class="mainContent">
+    <main class="mainContent" >
         <form method="post" action="${pageContext.request.contextPath}/profileTechnician">
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${technician.username}" />
+                <input type="text" name="username" class="inputBox" value="${username}" />
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${technician.firstName}" />
+                <input type="text" name="firstName" class="inputBox" value="${firstname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${technician.lastName}" />
+                <input type="text" name="lastName" class="inputBox" value="${lastname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${technician.phone}" />
+                <input type="text" name="phone" class="inputBox" value="${phone}" />
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${technician.email}" />
+                <input type="text" name="email" class="inputBox" value="${email}" />
             </div>
             </form>
         </main>
