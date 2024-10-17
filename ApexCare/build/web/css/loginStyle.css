@@ -78,7 +78,7 @@ select {
 
 /* Validation Messages */
 .Validation {
-    width: 202px; 
+    width: 100%; 
     height: 26px; 
     display: table-cell;
     font-weight: 400;

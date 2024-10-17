@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="models.User, models.Clients" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>

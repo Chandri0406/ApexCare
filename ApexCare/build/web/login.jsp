@@ -38,11 +38,12 @@
             </select>
         </div>
                     
-        <div class="fields Validation"> <!-- This could show validation messages -->
-            <c:if test="${not empty error}">
-                <span class="errorMessage">${error}</span>
-            </c:if>
-        </div>
+        <!-- Display error message if available -->
+            <div class="Validation">
+                <c:if test="${not empty errorMessage}">
+                    <span class="errorMessage">${errorMessage}</span>
+                </c:if>
+            </div>
 
             <div class="fields">
                 <button id="btn" type="submit">Login</button>

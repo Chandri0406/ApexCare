@@ -9,6 +9,7 @@
 
     <div id="bg"> 
         <h2 id="lgLabel">CREATE A USER</h2>
+        
         <form action="${pageContext.request.contextPath}/createUser" method="post" id="signupForm">
 
             <div class="fields">

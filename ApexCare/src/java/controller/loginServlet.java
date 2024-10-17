@@ -28,19 +28,28 @@ public class loginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("Username");
         String password = request.getParameter("Password");
-        String agentRole = request.getParameter("Agent");
-        String clientRole = request.getParameter("Client");
-        String technicianRole = request.getParameter("Technician");
+        String role = request.getParameter("role"); // Capture the selected role from form
 
         try {
             boolean loggedIn = fetchData(username, password);
 
             if (loggedIn) {
-                // Login successful
-                User user = new User(username, password, clientRole); // Initialize user
+                // Login successful, handle redirection based on role
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);
-                response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
+                session.setAttribute("role", role); // Store role in session if needed
+
+                if ("Agent".equalsIgnoreCase(role)) {
+                    response.sendRedirect(request.getContextPath() + "/profileAgent.jsp");
+                } else if ("Client".equalsIgnoreCase(role)) {
+                    response.sendRedirect(request.getContextPath() + "/profileClient.jsp");
+                } else if ("Technician".equalsIgnoreCase(role)) {
+                    response.sendRedirect(request.getContextPath() + "/profileTechnician.jsp");
+                } else {
+                    // If no role is selected, return an error
+                    request.setAttribute("errorMessage", "Please select a role.");
+                    request.getRequestDispatcher("/login.jsp").forward(request, response);
+                }
             } else {
                 // Login failed
                 request.setAttribute("errorMessage", "Invalid username or password.");

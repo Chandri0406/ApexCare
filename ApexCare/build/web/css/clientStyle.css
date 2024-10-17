@@ -111,6 +111,7 @@ ul {
 }
 
 .inputBox{
+    color: black;
     display: table-cell;
     margin-left: 20px;
     font-size: 17px;
