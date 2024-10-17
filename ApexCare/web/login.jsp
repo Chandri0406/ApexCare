@@ -43,7 +43,10 @@
         Not a user? <a href="${pageContext.request.contextPath}/createUser.jsp"><u>Create an account</u></a>
     </div>
     <div>
-        Not a user? <a href="${pageContext.request.contextPath}/complaint.jsp"><u>send a complaint</u></a>
+        Complaints <a href="${pageContext.request.contextPath}/complaint.jsp"><u>Send a Complaint</u></a>
+    </div>
+    <div>
+        Feedback <a href="${pageContext.request.contextPath}/feedback.jsp"><u>Submit Feedback</u></a>
     </div>
 </div>
 </body>

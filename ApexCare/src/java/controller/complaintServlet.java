@@ -64,6 +64,8 @@ public class complaintServlet extends HttpServlet {
             complaint.setDescription(description);
             complaint.setDateReported(dateReported);
             complaint.setDateResolved(dateResolved);
+            
+            
 
             // Add the complaint to the database
             addComplaint(complaint);
@@ -82,4 +84,5 @@ public class complaintServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/complaint.jsp");
         dispatcher.forward(request, response);
     }
+    
 }

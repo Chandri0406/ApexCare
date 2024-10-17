@@ -1,22 +1,26 @@
 package models;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Feedback {
-    private int feedbackID;
-    private int clientID;
-    private String issueID;
-    private int rating;
-    private String comments;
-    private Date dateProvided;
+    public int feedbackID;
+    public int clientID;
+    public String issueID;
+    public int rating;
+    public String comments;
+    public LocalDate dateProvided;
 
     // Constructor
-    public Feedback(int clientID, String issueID, int rating, String comments, Date dateProvided) {
+    public Feedback(int clientID, String issueID, int rating, String comments, LocalDate dateProvided) {
         this.clientID = clientID;
         this.issueID = issueID;
         this.rating = rating;
         this.comments = comments;
         this.dateProvided = dateProvided;
+    }
+    
+    public Feedback(){
+        
     }
 
     // Getters and setters
@@ -60,11 +64,11 @@ public class Feedback {
         this.comments = comments;
     }
 
-    public Date getDateProvided() {
+    public LocalDate getDateProvided() {
         return dateProvided;
     }
 
-    public void setDateProvided(Date dateProvided) {
+    public void setDateProvided(LocalDate dateProvided) {
         this.dateProvided = dateProvided;
     }
 
