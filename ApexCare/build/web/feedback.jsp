@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="controller.feedbackServlet" %>
-<!DOCTYPE html>t"
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
         <img src="${pageContext.request.contextPath}/images/logoMini.png" alt="Logo" id="logo">
         <span class="headTitle">Hello, ${username}</span>
     </header>
-
+    
     <!-- Main Layout Container -->
     <div class="navBox">
         <!-- Sidebar -->
@@ -42,29 +42,60 @@
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
             </ul>
 
-            <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
+            <form action="${pageContext.request.contextPath}/logout" method="get" style="display: inline;">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
+
         </nav>
     </div>
 
     <!-- Main Content Area -->
-    <main>
-        
+    <main class="mainContent">
+        <form name="FeedbackForm" action="${pageContext.request.contextPath}/feedbackServlet" method="post" onsubmit="return validateForm()">
+            
+            <div class="fields">
+                <label for="clientID" class="lbl">Client ID:</label>
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
+            </div>
+
+            <div class="fields">
+                <label for="issueID" class="lbl">Issue ID:</label>
+                <input type="text" name="issueID" id="issueID" class="inputBox" value="" />
+            </div>
+
+            <div class="fields">
+                <label for="rating" class="lbl">Rating:</label>
+                <input type="number" name="rating" id="rating" class="inputBox" value="" />
+            </div>
+
+            <div class="fields">
+                <label for="comments" class="lbl">Comments:</label>
+                <input type="text" name="comments" id="comments"class="inputBox" value=""  />
+            </div>
+            
+            <div class="fields">
+                <label for="dateProvided" class="lbl">Date:</label>
+                <input type="date" name="dateProvided" id="dateProvided" class="inputBox" value="" />
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
     </main>
             <script>
                  // Basic client-side validation for the form
                 function validateForm() {
-                    var clientId = document.forms["complaintForm"]["clientID"].value;
-                    var issueId = document.forms["complaintForm"]["issueID"].value;
-                    var dateReported = document.forms["complaintForm"]["dateReported"].value;
-                    var dateResolved = document.forms["complaintForm"]["dateResolved"].value;
-                    var description = document.forms["complaintForm"]["description"].value;
+                var clientId = document.forms["feedbackForm"]["clientID"].value;
+                var issueId = document.forms["feedbackForm"]["issueID"].value;
+                var rating = document.forms["feedbackForm"]["rating"].value;
+                var comments = document.forms["feedbackForm"]["comments"].value;
+                var dateProvided = document.forms["feedbackForm"]["dateProvided"].value;
 
-                    if (clientId === "" || issueId === "" || dateReported === "" || description === "") {
-                        alert("All fields except Date Resolved are required.");
-                        return false;
-                    }
-                    return true;
+                if (clientId === "" || issueId === "" || dateProvided === "") {
+                    alert("All fields except Comments are required.");
+                    return false;
                 }
+                return true;
+            }
             </script>
 </body>
 </html>

@@ -4,41 +4,44 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header */
 .headerBar {
     background-color: #14498B;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     color: white;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     box-sizing: border-box;
-    align-content: center;
 }
 
 #logo {
     width: 60px;
     height: 60px;
-    vertical-align: middle;
 }
 
 .headTitle {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
-    margin-left: 15px;
-    margin-top: 40px;
-    vertical-align: middle;
 }
 
+/* Sidebar */
 .navBox {
-    width: 250px;
     background-color: #E7E7E6;
     box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
     padding: 10px;
     flex-shrink: 0;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
 }
 
 .navHead {
@@ -51,11 +54,11 @@ body {
 .navLine {
     border: 2px solid #F6BF41;
     width: 100%;
-    justify-self: center;
 }
 
 ul {
-    list-style-type:none;
+    list-style-type: none;
+    padding: 0;
 }
 
 li {
@@ -64,10 +67,10 @@ li {
 
 .nav_items  {
     color: #02050A;
-    padding: 2px;
+    padding: 8px;
     font-size: 16px;
     text-decoration: none;
-    margin-left: -10px;
+    display: block;
 }
 
 .nav_items:hover {
@@ -75,27 +78,24 @@ li {
     color: white;
 }
 
+/* Logout Button */
 .logout_btn {
     color: #14498B;
-    font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    margin: 25px;
-    margin-top: 80px;
-    padding: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 12px;
     display: block;
     border: none;
-}
-
-button:hover {
-    background-color: none;
+    cursor: pointer; 
 }
 
 .logout_btn:hover {
-    background-color: none;
+    background: none;
     color: #002047;
 }
 
+/* Main Content */
 .mainContent {
     flex-grow: 1;
     background-color: #E7E7E6;
@@ -105,35 +105,91 @@ button:hover {
     padding: 10px;
 }
 
-.lbl{
+/* Forms */
+.fields {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lbl {
     color: #000000;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    display: table-cell;
     width: 180px;
 }
 
-.fields{
-    margin: 30px;
-    display: table;
-    align-content: center;
-}
-
-.inputBox{
+.inputBox {
     color: black;
-    display: table-cell;
-    margin-left: 20px;
     font-size: 17px;
     background: #D7D7D5;
     box-shadow: 1px 1px 4px #14498B;
+    padding: 5px;
+    width: 100%;
 }
 
+/* Buttons */
 #editProfile {
-    background-color: #F6BF41; 
-    border: none; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    float: right;
-    margin: 60px;
+    background-color: #F6BF41;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#editProfile:hover {
+    background: #F0A700;
+}
+
+#complaintbtn, #feedbackbtn {
+    width: 100%;
+    padding: 8px;
+    font-size: 17px;
+    background: #F6BF41;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#complaintbtn:hover, #feedbackbtn:hover {
+    background: #F0A700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navBox {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .mainContent {
+        margin: 0;
+    }
+
+    .fields {
+        flex-direction: column;
+    }
+
+    .lbl, .inputBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5px;
+    }
+    
+    .headTitle {
+        font-size: 20px;
+    }
+
+    .nav_items {
+        padding: 5px;
+        font-size: 14px;
+    }
 }

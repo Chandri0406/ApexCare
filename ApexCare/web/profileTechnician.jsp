@@ -20,56 +20,45 @@
         <nav>
             <h3 class="navHead">Profile</h3>
             <hr class="navLine">
-            <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileClient.jsp">Profile details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileAgent.jsp">Agent Profile details</a></li>
+            <ul> 
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/profileTechnician.jsp">Tech Profile details</a></li>
             </ul>
 
-            <h3 class="navHead">Contracts</h3>
+            <h3 class="navHead">Jobs</h3>
             <hr class="navLine">
             <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractDetails.jsp">Contract Details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractHistory.jsp">Contract History</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/manageContract.jsp">Manage Contract</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/ongoingJobs.jsp">Ongoing Job Assignments</a></li>
             </ul>
 
-            <h3 class="navHead">Issues</h3>
-            <hr class="navLine">
-            <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/feedback.jsp">Feedback Survey</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
-            </ul>
-
-            <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
+             <form action="${pageContext.request.contextPath}/logout" method="get" style="display: inline;">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
         </nav>
     </div>
 
     <!-- Main Content Area -->
     <main class="mainContent">
-        <form method="post" action="${pageContext.request.contextPath}/profileClient">
+        <form method="post" action="${pageContext.request.contextPath}/profileTechnician">
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${username}" />
+                <input type="text" name="username" class="inputBox" value="${technician.username}" />
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${firstName}" />
+                <input type="text" name="firstName" class="inputBox" value="${technician.firstName}" />
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${lastName}" />
+                <input type="text" name="lastName" class="inputBox" value="${technician.lastName}" />
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${phone}" />
+                <input type="text" name="phone" class="inputBox" value="${technician.phone}" />
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${email}" />
+                <input type="text" name="email" class="inputBox" value="${technician.email}" />
             </div>
-
-                <button type="submit" id="editProfile">Edit Profile</button>
             </form>
         </main>
 </body>

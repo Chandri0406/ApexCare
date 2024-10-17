@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="controller.complaintServlet" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,49 +41,48 @@
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
             </ul>
 
-            <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
+             <form action="${pageContext.request.contextPath}/logout" method="get" style="display: inline;">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
         </nav>
     </div>
 
     <!-- Main Content Area -->
-    <main>
-        <div>
-        <!-- The form action points to the Servlet handling the submission -->
-        <form  action="${pageContext.request.contextPath}/complaint" method="post" name="complaintForm" onsubmit="return validateForm()">
+    <main class="mainContent">
+        <form  action="${pageContext.request.contextPath}//complaintServlet" method="post" name="complaintForm" onsubmit="return validateForm()">
             
             <div class="fields">
                 <label for="clientID" class="lbl">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" class="inputBox" />
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
             </div>
 
             <div class="fields">
                 <label for="issueID" class="lbl">Issue ID:</label>
-                <input type="text" name="issueID" id="issueID" class="inputBox" />
+                <input type="text" name="issueID" id="issueID" class="inputBox" value="" />
             </div>
 
             <div class="fields">
                 <label for="dateReported" class="lbl">Date:</label>
-                <input type="date" name="dateReported" id="dateReported" class="inputBox" />
+                <input type="date" name="dateReported" id="dateReported" class="inputBox" value="" />
             </div>
 
             <div class="fields">
                 <label for="dateResolved" class="lbl">Date resolved:</label>
-                <input type="date" name="dateResolved" id="dateResolved" class="inputBox" />
+                <input type="date" name="dateResolved" id="dateResolved" class="inputBox" value="" />
             </div>
 
             <div class="fields">
                 <label for="description" class="lbl">Description:</label>
-                <input type="text" name="description" id="description" class="inputBox"/>
+                <input type="text" name="description" id="description" class="inputBox" value="" />
             </div>
 
-            <button type="submit">Send</button>
+            <button type="submit" class="btn">Send Complaint</button>
         </form>
 
         <!-- Conditionally display the success message -->
         <c:if test="${not empty isComplaintSent && isComplaintSent}">
             <p style="color:red;"></p>
         </c:if>
-    </div>
     </main>
             <script>
                  // Basic client-side validation for the form

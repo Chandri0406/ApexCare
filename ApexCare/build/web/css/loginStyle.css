@@ -97,6 +97,10 @@ select {
     display: table-cell;
 }
 
+#btn:hover{
+    background: #F0A700;
+}
+
 #link{
     text-align: center;
 }

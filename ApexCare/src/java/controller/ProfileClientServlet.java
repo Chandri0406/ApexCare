@@ -67,7 +67,7 @@ public class ProfileClientServlet extends HttpServlet {
             try (
                     ResultSet rs = stmt.executeQuery()) 
             {
-                if (rs.next()) 
+                while (rs.next()) 
                 {
                     client = new Clients();
                     client.setClientID(rs.getInt("ClientID"));

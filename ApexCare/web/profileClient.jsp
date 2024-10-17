@@ -83,27 +83,27 @@
         <form action="${pageContext.request.contextPath}/profileClient" method="post" >
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${client.username}" />
+                <input type="text" name="username" class="inputBox" value="JohnTest" />
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${client.firstName}" />
+                <input type="text" name="firstName" class="inputBox" value="John" />
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${client.lastName}" />
+                <input type="text" name="lastName" class="inputBox" value="Doe" />
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${client.phone}" />
+                <input type="text" name="phone" class="inputBox" value="0548829637" />
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${client.email}" />
+                <input type="text" name="email" class="inputBox" value="john@gmail.com" />
             </div>
             <div class="fields">
                 <label class="lbl">Address:</label>
-                <input type="text" name="address" class="inputBox" value="${client.address}" />
+                <input type="text" name="address" class="inputBox" value="85 Test Lane" />
             </div>
 
                 <button type="submit" id="editProfile">Edit Profile</button>

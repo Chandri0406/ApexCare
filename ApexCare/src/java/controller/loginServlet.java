@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @WebServlet("/login")
-public class loginServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
     Connection conn;
     private DBConnection dbconn = new DBConnection();
     User user;
@@ -59,7 +59,7 @@ public class loginServlet extends HttpServlet {
             // Handle database exceptions
             ex.printStackTrace();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

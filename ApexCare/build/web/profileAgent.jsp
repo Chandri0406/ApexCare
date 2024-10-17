@@ -28,19 +28,19 @@
             <h3 class="navHead">Clients</h3>
             <hr class="navLine">
             <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractDetails.jsp">Contract Details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/contractHistory.jsp">Contract History</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/manageContract.jsp">Manage Contract</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/clientDetails.jsp">Client Details</a></li>
             </ul>
 
             <h3 class="navHead">Issues</h3>
             <hr class="navLine">
             <ul>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/feedback.jsp">Feedback Survey</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/complaint.jsp">Send a Complaint</a> </li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/reportIssue.jsp">Report an Issue</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/assignIssue.jsp">Assign an Issue</a> </li>
             </ul>
 
-            <a href="${pageContext.request.contextPath}/login.jsp" class="logout_btn">Logout</a>
+            <form action="${pageContext.request.contextPath}/logout" method="get" style="display: inline;">
+                <button type="submit" class="logout_btn">Logout</button>
+            </form>
         </nav>
     </div>
 
@@ -67,8 +67,6 @@
                 <label class="lbl">Email:</label>
                 <input type="text" name="email" class="inputBox" value="${email}" />
             </div>
-
-                <button type="submit" id="editProfile">Edit Profile</button>
             </form>
         </main>
 </body>
