@@ -9,7 +9,9 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.sql.*;
+import org.apache.catalina.ha.ClusterSession;
 
 @WebServlet("/profileClient")
 public class ProfileClientServlet extends HttpServlet {
@@ -22,6 +24,12 @@ public class ProfileClientServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = (String) request.getSession().getAttribute("username");
+        String firstname = (String) request.getSession().getAttribute("firstname");
+        String lastname = (String) request.getSession().getAttribute("lastname");
+        String phone = (String) request.getSession().getAttribute("phone");
+        String email = (String) request.getSession().getAttribute("email");
+        String address = (String) request.getSession().getAttribute("address");
+        
 
         if (username == null) {
             response.sendRedirect(request.getContextPath() + "/login");
@@ -29,14 +37,18 @@ public class ProfileClientServlet extends HttpServlet {
         }
 
         try {
-            client = getClientByUsername(username);
+            /*client = getClientByUsername(username);
+            System.out.println(client.getClientID());
+            System.out.println(client.getFirstName());
+            System.out.println(client.getLastName());
+            System.out.println(client.getEmail());
+            System.out.println(client.getPhone());
+            System.out.println(client.getAddress());*/
         } catch (Exception e) {
             e.printStackTrace();
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Unable to retrieve client data.");
             return;
         }
-
-        request.setAttribute("client", client);
         request.getRequestDispatcher("/profileClient.jsp").forward(request, response);
     }
 
@@ -61,7 +73,7 @@ public class ProfileClientServlet extends HttpServlet {
         String query = "SELECT * FROM \"tb_Client\" WHERE \"Username\" = ?" ;
 
         try (
-                PreparedStatement stmt = con.prepareStatement("SELECT * FROM \"tb_Client\" WHERE \"Username\" = ?" + username)) 
+                PreparedStatement stmt = con.prepareStatement(query)) 
         {
             stmt.setString(1, username);
             try (

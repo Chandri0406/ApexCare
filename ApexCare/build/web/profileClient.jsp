@@ -47,7 +47,6 @@
 
         </nav>
     </div>
-
     <!-- Main Content Area -->
     <main class="mainContent">
         <!-- Client Data Table -->
@@ -62,48 +61,41 @@
                     <th>Email</th>
                     <th>Address</th>
                 </tr>
-               <c:if test="${not empty client}">
                     <tr>
                         <td>${username}</td>
-                        <td>${firstName}</td>
-                        <td>${lastName}</td>
+                        <td>${firstname}</td>
+                        <td>${lastname}</td>
                         <td>${phone}</td>
                         <td>${email}</td>
                         <td>${address}</td>
                     </tr>
-                </c:if>
-                <c:if test="${empty client}">
-                    <tr>
-                        <td colspan="6">Client information not available.</td>
-                    </tr>
-                </c:if>
             </table>
         </div>
         
         <form action="${pageContext.request.contextPath}/profileClient" method="post" >
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="JohnTest" />
+                <input type="text" name="username" class="inputBox" value="${username}" />
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="John" />
+                <input type="text" name="firstName" class="inputBox" value="${firstname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="Doe" />
+                <input type="text" name="lastName" class="inputBox" value="${lastname}" />
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="0548829637" />
+                <input type="text" name="phone" class="inputBox" value="${phone}" />
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="john@gmail.com" />
+                <input type="text" name="email" class="inputBox" value="${email}" />
             </div>
             <div class="fields">
                 <label class="lbl">Address:</label>
-                <input type="text" name="address" class="inputBox" value="85 Test Lane" />
+                <input type="text" name="address" class="inputBox" value="${address}" />
             </div>
 
                 <button type="submit" id="editProfile">Edit Profile</button>
