@@ -20,6 +20,10 @@
         <servlet-name>ProfileAgentServlet</servlet-name>
         <servlet-class>controller.ProfileAgentServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ClientDetailsServlet</servlet-name>
+        <servlet-class>controller.ClientDetailsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -39,5 +43,9 @@
     <servlet-mapping>
         <servlet-name>ProfileAgentServlet</servlet-name>
         <url-pattern>/ProfileAgentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClientDetailsServlet</servlet-name>
+        <url-pattern>/ClientDetailsServlet</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -23,6 +23,7 @@ public class ProfileClientServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Integer clientID = (Integer) request.getSession().getAttribute("clientID");
         String username = (String) request.getSession().getAttribute("username");
         String firstname = (String) request.getSession().getAttribute("firstname");
         String lastname = (String) request.getSession().getAttribute("lastname");
@@ -54,14 +55,17 @@ public class ProfileClientServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        Integer clientID = (Integer) session.getAttribute("clientID");
+        
         String username = request.getParameter("username");
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
+        String firstname = request.getParameter("firstname");
+        String lastname = request.getParameter("lastname");
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
 
-        Clients updatedClient = new Clients(client.getClientID(), username, firstName, lastName, address, phone, email);
+        Clients updatedClient = new Clients(clientID, username, firstname, lastname, address, phone, email);
 
         DBConnection db = new DBConnection();
         updateClient2(updatedClient);
