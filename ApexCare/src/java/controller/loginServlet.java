@@ -14,10 +14,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import models.*;
 
-/**
- *
- * @author chanb
- */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     Connection conn;

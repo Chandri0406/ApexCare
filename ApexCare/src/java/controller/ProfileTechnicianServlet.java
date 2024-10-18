@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
 package controller;
 
 import java.io.IOException;
@@ -19,10 +15,6 @@ import java.sql.SQLException;
 import models.Clients;
 import models.Technician;
 
-/**
- *
- * @author chanb
- */
 @WebServlet("/profileTechnician")
 public class ProfileTechnicianServlet extends HttpServlet {
 

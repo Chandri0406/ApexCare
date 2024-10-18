@@ -14,10 +14,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import models.ServiceAgent;
 
-/**
- *
- * @author chanb
- */
 @WebServlet("/profileAgent")
 public class ProfileAgentServlet extends HttpServlet {
 
