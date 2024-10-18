@@ -52,7 +52,7 @@
         <form action="${pageContext.request.contextPath}/clientDetails" method="post" class="searchBarForm">
             <label for="searchClientID" class="lbl">Search by Client ID:</label>
             <input type="integer" name="clientIDS"  class="searchBox" placeholder="Enter Client ID" required />
-            <button type="submit" class="searchButton">Search</button>
+            <button type="submit" id="searchbtn">Search</button>
         </form>
         
         <form action="${pageContext.request.contextPath}/clientDetails" method="post" >

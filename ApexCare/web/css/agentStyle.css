@@ -132,6 +132,16 @@ li {
     margin-right: 15%;
 }
 
+.searchBox {
+    color: black;
+    font-size: 17px;
+    background: #D7D7D5;
+    box-shadow: 1px 1px 4px #14498B;
+    padding: 5px;
+    width: 50%;
+    display: inline;
+}
+
 /* Buttons */
 #editProfile {
     background-color: #F6BF41;
@@ -146,7 +156,7 @@ li {
     background: #F0A700;
 }
 
-#complaintbtn, #feedbackbtn {
+#complaintbtn, #feedbackbtn, #searchbtn {
     padding: 8px;
     font-size: 17px;
     background: #F6BF41;
@@ -159,6 +169,32 @@ li {
 #complaintbtn:hover, #feedbackbtn:hover {
     background: #F0A700;
 }
+
+.tbl{
+    font-size: 19px;
+    border: 5px solid #14498B;
+    width: 98%;
+    margin: 10px;
+}
+
+#header {
+    padding: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+tr{
+    padding: 5px;
+    margin: 10px;
+}
+
+th{
+    border: 2px solid #14498B;
+    padding: 5px;
+    margin: 10px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

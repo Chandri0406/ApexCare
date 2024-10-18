@@ -22,8 +22,6 @@
             <hr class="navLine">
             <ul>
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/profileClient.jsp">Profile details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileAgent.jsp">Agent Profile details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/profileTechnician.jsp">Tech Profile details</a></li>
             </ul>
 
             <h3 class="navHead">Contracts</h3>
