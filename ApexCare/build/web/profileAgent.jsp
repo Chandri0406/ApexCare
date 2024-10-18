@@ -29,6 +29,7 @@
             <hr class="navLine">
             <ul>
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/clientDetails.jsp">Client Details</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/clientHistory.jsp">Client History</a></li>
             </ul>
 
             <h3 class="navHead">Issues</h3>
