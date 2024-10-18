@@ -79,4 +79,16 @@ public class Complaint {
     public void setDateResolved(LocalDate dateResolved) {
         this.DateResolved = dateResolved; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
+ @Override
+public String toString() {
+    return "Complaint{" +
+            "complaintID=" + ComplaintID +
+            ", clientID=" + ClientID +
+            ", issueID='" + IssueID + '\'' +
+            ", dateReported=" + DateReported +
+            ", dateResolved=" + DateResolved +
+            ", description='" + Description + '\'' +
+            '}';
+}
 }

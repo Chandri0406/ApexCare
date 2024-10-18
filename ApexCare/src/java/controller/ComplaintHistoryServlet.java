@@ -31,7 +31,21 @@ public class ComplaintHistoryServlet extends HttpServlet {
             // Validate and parse client ID
             if (clientIdStr != null && !clientIdStr.isEmpty()) {
                 int clientId = Integer.parseInt(clientIdStr); // Only parse if not null
-                complaints = fetchComplaintsByClientId(clientId); // Fetch complaints for the client
+                complaints = fetchComplaintsByClientId(clientId);
+                // Fetch complaints for the client
+                for(Complaint com : complaints)
+                {
+                                
+                request.setAttribute("complaintid", com.ComplaintID);
+                request.setAttribute("clientid", com.ClientID);
+                request.setAttribute("issueid", com.IssueID);
+                request.setAttribute("datereported", com.DateReported);
+                request.setAttribute("dateresolved", com.DateResolved);
+                request.setAttribute("description", com.Description);
+                }
+                
+                request.setAttribute("complaints", complaints);
+
             } else {
                 request.setAttribute("errorMessage", "Client ID is required.");
             }
@@ -55,12 +69,12 @@ public class ComplaintHistoryServlet extends HttpServlet {
         try {
             con = dbcon.getConnection(); // Get database connection
             String query = "SELECT *FROM \"tb_Complaint\" WHERE \"ClientID\" = ?";
-            
+            System.out.println("SQL Query: " + query + " with ClientID: " + clientId);
             PreparedStatement stmt = con.prepareStatement(query);
             stmt.setInt(1, clientId);
             ResultSet rs = stmt.executeQuery();
 
-            if (rs.next()) {
+            while (rs.next()) {
                 Complaint complaint = new Complaint();
                 complaint.setComplaintID(rs.getInt("ComplaintID"));
                 complaint.setClientID(rs.getInt("ClientID"));
@@ -68,9 +82,12 @@ public class ComplaintHistoryServlet extends HttpServlet {
                 complaint.setDateReported(rs.getObject("DateReported", LocalDate.class)); // Retrieve LocalDate
                 complaint.setDateResolved(rs.getObject("DateResolved", LocalDate.class)); // Retrieve LocalDate
                 complaint.setDescription(rs.getString("Description"));
+                
+                System.out.println("Fetched complaint: " + complaint); // Log complaint details
                 complaints.add(complaint);
+                
             }
-             return complaints;
+           
 
         } catch (SQLException e) {
             e.printStackTrace(); // Handle SQL exceptions appropriately
@@ -81,7 +98,7 @@ public class ComplaintHistoryServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
-        return null;
+         return complaints;
         
     }
 }

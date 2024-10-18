@@ -1,3 +1,5 @@
+<%@page import="java.util.List"%>
+<%@page import="models.Complaint"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,38 +55,46 @@
             <button type="submit" class="searchButton">Search</button>
         </form>
 
-        <!-- Display Error Message -->
-        <c:if test="${not empty errorMessage}">
-            <div class="error-message">${errorMessage}</div>
-        </c:if>
+         <h2>Complaint History</h2>
 
-        <table>
-            <thead>
+    <c:if test="${not empty errorMessage}">
+        <div style="color: red;">${errorMessage}</div>
+    </c:if>
+
+    <table border="1">
+        <tr>
+            <th>Complaint ID</th>
+            <th>Client ID</th>
+            <th>Issue ID</th>
+            <th>Date Reported</th>
+            <th>Date Resolved</th>
+            <th>Description</th>
+        </tr>
+            <%
+        List<Complaint> complaintsList = (List<Complaint>) request.getAttribute("complaints");
+        if (complaintsList != null && !complaintsList.isEmpty()) {
+            for (Complaint com : complaintsList) {
+    %>
                 <tr>
-                    <th>Complaint ID</th>
-                    <th>Issue ID</th>
-                    <th>Date Reported</th>
-                    <th>Date Resolved</th>
-                    <th>Description</th>
+                    <td><%= com.getComplaintID() %></td>
+                    <td><%= com.getClientID() %></td>
+                    <td><%= com.getIssueID() %></td>
+                    <td><%= com.getDateReported() %></td>
+                    <td><%= com.getDateResolved() != null ? com.getDateResolved() : "Not Resolved" %></td>
+                    <td><%= com.getDescription() %></td>
                 </tr>
-            </thead>
-            <tbody>
-                <c:forEach var="complaint" items="${complaints}">
-                    <tr>
-                        <td>${complaint.complaintID}</td>
-                        <td>${complaint.issueID}</td>
-                        <td>${complaint.dateReported}</td>
-                        <td>${complaint.dateResolved}</td>
-                        <td>${complaint.description}</td>
-                    </tr>
-                </c:forEach>
-                <c:if test="${empty complaints}">
-                    <tr>
-                        <td colspan="5">No complaints found.</td>
-                    </tr>
-                </c:if>
-            </tbody>
-        </table>
+    <%
+            }
+        } else {
+    %>
+                <tr>
+                    <td colspan="6">No complaints found.</td>
+                </tr>
+    <%
+        }
+    %>
+        </c:forEach>
+    </table>
     </main>
 </body>
 </html>
