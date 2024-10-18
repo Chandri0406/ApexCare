@@ -37,19 +37,6 @@ public class ProfileClientServlet extends HttpServlet {
             return;
         }
 
-        try {
-            /*client = getClientByUsername(username);
-            System.out.println(client.getClientID());
-            System.out.println(client.getFirstName());
-            System.out.println(client.getLastName());
-            System.out.println(client.getEmail());
-            System.out.println(client.getPhone());
-            System.out.println(client.getAddress());*/
-        } catch (Exception e) {
-            e.printStackTrace();
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Unable to retrieve client data.");
-            return;
-        }
         request.getRequestDispatcher("/profileClient.jsp").forward(request, response);
     }
 

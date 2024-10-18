@@ -41,23 +41,23 @@
         <form method="post" action="${pageContext.request.contextPath}/profileTechnician">
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${username}" />
+                <input type="text" name="username" class="inputBox" value="${username}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${firstname}" />
+                <input type="text" name="firstName" class="inputBox" value="${firstname}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${lastname}" />
+                <input type="text" name="lastName" class="inputBox" value="${lastname}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${phone}" />
+                <input type="text" name="phone" class="inputBox" value="${phone}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${email}" />
+                <input type="text" name="email" class="inputBox" value="${email}" readonly/>
             </div>
             </form>
         </main>

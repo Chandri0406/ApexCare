@@ -29,7 +29,7 @@
             <hr class="navLine">
             <ul>
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/clientDetails.jsp">Client Details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/clientHistory.jsp">Client History</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/complaintHistory.jsp">Complaint History</a></li>
             </ul>
 
             <h3 class="navHead">Issues</h3>
@@ -50,43 +50,46 @@
         
         <!-- Search Bar to Find Client by ID -->
         <form action="${pageContext.request.contextPath}/clientDetails" method="post" class="searchBarForm">
-            <label for="searchClientID" class="searchLabel">Search by Client ID:</label>
-            <input type="text" name="clientID" id="searchClientID" class="searchBox" placeholder="Enter Client ID" required />
+            <label for="searchClientID" class="lbl">Search by Client ID:</label>
+            <input type="integer" name="clientIDS"  class="searchBox" placeholder="Enter Client ID" required />
             <button type="submit" class="searchButton">Search</button>
         </form>
         
         <form action="${pageContext.request.contextPath}/clientDetails" method="post" >
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${usernameC}" />
+                <input type="text" name="usernameC" class="inputBox" value="${usernameC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Client ID:</label>
-                <input type="text" name="clientID" class="inputBox" value="${clientIDC}" />
+                <input type="text" name="clientIDC" class="inputBox" value="${clientIDC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${firstnameC}" />
+                <input type="text" name="firstNameC" class="inputBox" value="${firstnameC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${lastnameC}" />
+                <input type="text" name="lastNameC" class="inputBox" value="${lastnameC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${phoneC}" />
+                <input type="text" name="phoneC" class="inputBox" value="${phoneC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${emailC}" />
+                <input type="text" name="email" class="inputBox" value="${emailC}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Address:</label>
-                <input type="text" name="address" class="inputBox" value="${addressC}" />
+                <input type="text" name="addressC" class="inputBox" value="${addressC}" readonly/>
             </div>
-
+            
+            <c:if test="${not empty errorMessage}">
+                <div class="error">${errorMessage}</div>
+            </c:if>
+            
             </form>
-        </main>
         </main>
 </body>
 </html>

@@ -29,7 +29,7 @@
             <hr class="navLine">
             <ul>
                 <li><a class="nav_items" href="${pageContext.request.contextPath}/clientDetails.jsp">Client Details</a></li>
-                <li><a class="nav_items" href="${pageContext.request.contextPath}/clientHistory.jsp">Client History</a></li>
+                <li><a class="nav_items" href="${pageContext.request.contextPath}/complaintHistory.jsp">Complaint History</a></li>
             </ul>
 
             <h3 class="navHead">Issues</h3>
@@ -50,23 +50,23 @@
         <form method="post" action="${pageContext.request.contextPath}/profileAgent">
             <div class="fields">
                 <label class="lbl">Username:</label>
-                <input type="text" name="username" class="inputBox" value="${username}" />
+                <input type="text" name="username" class="inputBox" value="${username}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">First Name:</label>
-                <input type="text" name="firstName" class="inputBox" value="${firstname}" />
+                <input type="text" name="firstName" class="inputBox" value="${firstname}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Last Name:</label>
-                <input type="text" name="lastName" class="inputBox" value="${lastname}" />
+                <input type="text" name="lastName" class="inputBox" value="${lastname}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Phone:</label>
-                <input type="text" name="phone" class="inputBox" value="${phone}" />
+                <input type="text" name="phone" class="inputBox" value="${phone}" readonly/>
             </div>
             <div class="fields">
                 <label class="lbl">Email:</label>
-                <input type="text" name="email" class="inputBox" value="${email}" />
+                <input type="text" name="email" class="inputBox" value="${email}" readonly/>
             </div>
             </form>
         </main>
