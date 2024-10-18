@@ -42,6 +42,7 @@ public class ComplaintHistoryServlet extends HttpServlet {
             e.printStackTrace();
             request.setAttribute("errorMessage", "An error occurred: " + e.getMessage());
         }
+        
 
         request.setAttribute("complaints", complaints);
         request.getRequestDispatcher("/complaintHistory.jsp").forward(request, response);
@@ -53,22 +54,23 @@ public class ComplaintHistoryServlet extends HttpServlet {
 
         try {
             con = dbcon.getConnection(); // Get database connection
-            String query = "SELECT *FROM public.\"tb_Complaint\" WHERE \"ClientID\" = ?";
+            String query = "SELECT *FROM \"tb_Complaint\" WHERE \"ClientID\" = ?";
             
             PreparedStatement stmt = con.prepareStatement(query);
             stmt.setInt(1, clientId);
             ResultSet rs = stmt.executeQuery();
 
-            while (rs.next()) {
+            if (rs.next()) {
                 Complaint complaint = new Complaint();
-                complaint.setComplaintID(rs.getInt("complaintID"));
-                complaint.setClientID(rs.getInt("clientID"));
-                complaint.setIssueID(rs.getString("issueID"));
-                complaint.setDateReported(rs.getObject("dateReported", LocalDate.class)); // Retrieve LocalDate
-                complaint.setDateResolved(rs.getObject("dateResolved", LocalDate.class)); // Retrieve LocalDate
-                complaint.setDescription(rs.getString("description"));
+                complaint.setComplaintID(rs.getInt("ComplaintID"));
+                complaint.setClientID(rs.getInt("ClientID"));
+                complaint.setIssueID(rs.getString("IssueID"));
+                complaint.setDateReported(rs.getObject("DateReported", LocalDate.class)); // Retrieve LocalDate
+                complaint.setDateResolved(rs.getObject("DateResolved", LocalDate.class)); // Retrieve LocalDate
+                complaint.setDescription(rs.getString("Description"));
                 complaints.add(complaint);
             }
+             return complaints;
 
         } catch (SQLException e) {
             e.printStackTrace(); // Handle SQL exceptions appropriately
@@ -79,7 +81,12 @@ public class ComplaintHistoryServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
-
-        return complaints;
+        return null;
+        
     }
 }
+
+    
+    
+    
+
