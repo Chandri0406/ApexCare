@@ -107,7 +107,7 @@
                 var comments = document.forms["feedbackForm"]["comments"].value;
                 var dateProvided = document.forms["feedbackForm"]["dateProvided"].value;
 
-                if (clientId === "" || issueId === "" || dateProvided === "") {
+                if (clientId === "" || issueId === "" || dateProvided === "" || rating === "") {
                     alert("All fields except Comments are required.");
                     return false;
                 }
