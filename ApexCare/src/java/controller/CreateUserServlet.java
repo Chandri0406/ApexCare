@@ -26,56 +26,50 @@ public class CreateUserServlet extends HttpServlet {
         request.getRequestDispatcher("/createUser.jsp").forward(request, response);
     }
     
- protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-        throws ServletException, IOException {
-    
+   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     // Retrieve form data
-    String firstName = request.getParameter("firstName");
-    String lastName = request.getParameter("lastName");
-    String phone = request.getParameter("phone");
-    String email = request.getParameter("email");
-    String confirmEmail = request.getParameter("confirmEmail");
-    String address = request.getParameter("address");
-    String username = request.getParameter("username");
-    String password = request.getParameter("password");
-    String confirmPassword = request.getParameter("confirmPassword");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        String phone = request.getParameter("phone");
+        String email = request.getParameter("email");
+        String confirmEmail = request.getParameter("confirmEmail");
+        String address = request.getParameter("address");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String confirmPassword = request.getParameter("confirmPassword");
 
-    boolean isValid = true;
-    String errorMessage = "";
+        boolean isValid = true;
+        String errorMessage = "";
 
-    // Validate email confirmation
-    if (!email.equals(confirmEmail)) {
-        errorMessage += "Emails do not match!<br/>";
-        isValid = false;
+        // Validate email confirmation
+        if (!email.equals(confirmEmail)) {
+            errorMessage += "Emails do not match!<br/>";
+            isValid = false;
+        }
+
+        // Validate password confirmation
+        if (!password.equals(confirmPassword)) {
+            errorMessage += "Passwords do not match!<br/>";
+            isValid = false;
+        }
+
+        // If validation fails, send back to the JSP with error messages
+        if (!isValid) {
+            request.setAttribute("errorMessage", errorMessage);
+            request.getRequestDispatcher("/createUser.jsp").forward(request, response);
+            return;
+        }
+
+        // Insert user into the database if validation passes
+        try {
+            insertClient(username, password, firstName, lastName, phone, email, address);
+            request.setAttribute("successMessage", "User created successfully!");
+            request.getRequestDispatcher("/createUser.jsp").forward(request, response);
+        } catch (Exception ex) {
+            request.setAttribute("errorMessage", "An error occurred while creating the user.");
+            request.getRequestDispatcher("/createUser.jsp").forward(request, response);
+        }
     }
-
-    // Validate password confirmation
-    if (!password.equals(confirmPassword)) {
-        errorMessage += "Passwords do not match!<br/>";
-        isValid = false;
-    }
-
-    // If validation fails, send back to the JSP with error messages
-    if (!isValid) {
-        request.setAttribute("errorMessage", errorMessage);
-        request.getRequestDispatcher("/createUser.jsp").forward(request, response);
-        return;
-    }
-
-    // Insert user into the database if validation passes
-    try {
-        insertClient(username, password, firstName, lastName, phone, email, address);
-
-        // Set success message and redirect to login.jsp
-        request.getSession().setAttribute("successMessage", "User registered successfully! Please login.");
-        response.sendRedirect(request.getContextPath() + "/login.jsp");
-
-    } catch (Exception ex) {
-        request.setAttribute("errorMessage", "An error occurred while creating the user.");
-        request.getRequestDispatcher("/createUser.jsp").forward(request, response);
-    }
-}
-
 
     
     public boolean usernameExists(String username) throws SQLException {

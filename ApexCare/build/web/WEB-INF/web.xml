@@ -12,6 +12,14 @@
         <servlet-name>ProfileClientServlet</servlet-name>
         <servlet-class>controller.ProfileClientServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProfileTechnicianServlet</servlet-name>
+        <servlet-class>controller.ProfileTechnicianServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProfileAgentServlet</servlet-name>
+        <servlet-class>controller.ProfileAgentServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -23,5 +31,13 @@
     <servlet-mapping>
         <servlet-name>ProfileClientServlet</servlet-name>
         <url-pattern>/ProfileClientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProfileTechnicianServlet</servlet-name>
+        <url-pattern>/ProfileTechnicianServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProfileAgentServlet</servlet-name>
+        <url-pattern>/ProfileAgentServlet</url-pattern>
     </servlet-mapping>
 </web-app>

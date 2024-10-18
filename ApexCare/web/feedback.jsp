@@ -1,76 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="controller.feedbackServlet" %>
 
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Submit Feedback</title>
-        <script>
-            // Basic client-side validation for the form
-            function validateForm() {
-                var clientId = document.forms["feedbackForm"]["clientID"].value;
-                var issueId = document.forms["feedbackForm"]["issueID"].value;
-                var rating = document.forms["feedbackForm"]["rating"].value;
-                var comments = document.forms["feedbackForm"]["comments"].value;
-                var dateProvided = document.forms["feedbackForm"]["dateProvided"].value;
-
-                if (clientId === "" || issueId === "" || dateProvided === "") {
-                    alert("All fields except Comments are required.");
-                    return false;
-                }
-                return true;
-            }
-        </script>
-    </head>
-    <body>
-        <div> -->
-        <!-- The form action points to the Servlet handling the submission -->
-        <!--<form name="FeedbackForm" action="${pageContext.request.contextPath}/feedbackServlet" method="post" onsubmit="return validateForm()">
-            
-            <div>
-                <label for="clientID">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" />
-            </div>
-
-            <div>
-                <label for="issueID">Issue ID:</label>
-                <input type="text" name="issueID" id="issueID" />
-            </div>
-
-            <div>
-                <label for="rating">Rating:</label>
-                <input type="number" name="rating" id="rating" />
-            </div>
-
-            <div>
-                <label for="comments">Comments:</label>
-                <input type="text" name="comments" id="comments" />
-            </div>
-            
-            <div>
-                <label for="dateProvided">Date:</label>
-                <input type="date" name="dateProvided" id="dateProvided" />
-            </div>
-
-            <button type="submit">Submit</button>
-        </form> -->
-
-        <!-- Display success or error message only after form submission (POST request) -->
-        <!-- <c:if test="${pageContext.request.method == 'POST'}">
-            <c:choose>
-                <c:when test="${not empty isComplaintSent && isComplaintSent}">
-                    <p style="color:green;">Complaint sent successfully and added to the database.</p>
-                </c:when>
-                <c:when test="${not empty errorMessage}">
-                    <p style="color:red;">${errorMessage}</p>
-                </c:when>
-            </c:choose>
-        </c:if>
-    </div>
-    </body>
-</html> -->
-        
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,11 +51,11 @@
 
     <!-- Main Content Area -->
     <main class="mainContent">
-        <form name="feedbackForm" action="${pageContext.request.contextPath}/feedbackServlet" method="post" onsubmit="return validateForm()">
+        <form name="FeedbackForm" action="${pageContext.request.contextPath}/feedbackServlet" method="post" onsubmit="return validateForm()">
             
             <div class="fields">
                 <label for="clientID" class="lbl">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="${clientID}" readonly/>
             </div>
 
             <div class="fields">
@@ -134,9 +63,15 @@
                 <input type="text" name="issueID" id="issueID" class="inputBox" value="" />
             </div>
 
-            <div class="fields">
+            <div class="stars">
                 <label for="rating" class="lbl">Rating:</label>
-                <input type="number" name="rating" id="rating" class="inputBox" value="" />
+                <!-- Create 5 stars for rating -->
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(1)" data-value="1" alt="1 Star" id="star1">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(2)" data-value="2" alt="2 Stars" id="star2">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(3)" data-value="3" alt="3 Stars" id="star3">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(4)" data-value="4" alt="4 Stars" id="star4">
+                    <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(5)" data-value="5" alt="5 Stars" id="star5">
+                    <input type="hidden" name="rating" id="rating" value="" />
             </div>
 
             <div class="fields">
@@ -149,10 +84,21 @@
                 <input type="date" name="dateProvided" id="dateProvided" class="inputBox" value="" />
             </div>
 
-            <button id="feedbackbtn" type="submit" class="btn">Submit</button>
+            <button type="submit" id="feedbackbtn">Submit</button>
         </form>
     </main>
             <script>
+                function setRating(rating) {
+                    // Update hidden input field with the selected rating
+                    document.getElementById('rating').value = rating;
+
+                    // Change the star images
+                    for (let i = 1; i <= 5; i++) {
+                        const star = document.getElementById('star' + i);
+                        star.src = (i <= rating) ? "${pageContext.request.contextPath}/images/starY.png" : "${pageContext.request.contextPath}/images/starB.png";
+                    }
+                }
+                
                  // Basic client-side validation for the form
                 function validateForm() {
                 var clientId = document.forms["feedbackForm"]["clientID"].value;
@@ -161,7 +107,7 @@
                 var comments = document.forms["feedbackForm"]["comments"].value;
                 var dateProvided = document.forms["feedbackForm"]["dateProvided"].value;
 
-                if (clientId === "" || issueId === "" || dateProvided === "" || rating === "") {
+                if (clientId === "" || issueId === "" || dateProvided === "") {
                     alert("All fields except Comments are required.");
                     return false;
                 }

@@ -1,6 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="controller.complaintServlet" %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +53,7 @@
             
             <div class="fields">
                 <label for="clientID" class="lbl">Client ID:</label>
-                <input type="number" name="clientID" id="clientID" class="inputBox" value="" />
+                <input type="number" name="clientID" id="clientID" class="inputBox" value="${clientID}" readonly/>
             </div>
 
             <div class="fields">
@@ -78,7 +76,7 @@
                 <input type="text" name="description" id="description" class="inputBox" value="" />
             </div>
 
-            <button id="complaintbtn" type="submit" class="btn">Send Complaint</button>
+            <button type="submit" id="complaintbtn">Send Complaint</button>
         </form>
 
         <!-- Conditionally display the success message -->

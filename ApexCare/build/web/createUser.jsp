@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +7,9 @@
 </head>
 <body>
 
-    <div id="bg"> 
+    <div id="bg">
         <h2 id="lgLabel">CREATE A USER</h2>
-        
+
         <form action="${pageContext.request.contextPath}/createUser" method="post" id="signupForm">
 
             <div class="fields">
@@ -63,11 +62,17 @@
             </div>
 
             <button type="submit" id="btn">Sign Up</button>
+                   
         </form>
+        <button type="submit" id="backBtn" onclick="goBack()">Back to Login</button>
     </div>
 
     <!-- Display alerts based on success or error message -->
     <script>
+        function goBack(){
+           document.location.href = "${pageContext.request.contextPath}/login.jsp";
+        }
+        
         // Check if there's a success or error message from the server
         const successMessage = '<%= request.getAttribute("successMessage") != null ? request.getAttribute("successMessage") : "" %>';
         const errorMessage = '<%= request.getAttribute("errorMessage") != null ? request.getAttribute("errorMessage") : "" %>';

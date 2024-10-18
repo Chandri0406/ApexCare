@@ -2,7 +2,7 @@ package models;
 
 public class Technician {
     // Properties
-    private int technicianID;
+    private String technicianID;
     private String username;
     private String firstName;
     private String lastName;
@@ -10,7 +10,7 @@ public class Technician {
     private String email;
 
     // Constructor
-    public Technician(int technicianID, String username, String firstName, String lastName, String phone, String email) {
+    public Technician(String technicianID, String username, String firstName, String lastName, String phone, String email) {
         this.technicianID = technicianID;
         this.username = username;
         this.firstName = firstName;
@@ -18,13 +18,15 @@ public class Technician {
         this.phone = phone;
         this.email = email;
     }
+    
+    public Technician(){}
 
     // Getters and setters
-    public int getTechnicianID() {
+    public String getTechnicianID() {
         return technicianID;
     }
 
-    public void setTechnicianID(int technicianID) {
+    public void setTechnicianID(String technicianID) {
         this.technicianID = technicianID;
     }
 
