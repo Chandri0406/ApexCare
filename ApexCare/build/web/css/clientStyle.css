@@ -17,7 +17,6 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -25,11 +24,14 @@ body {
 #logo {
     width: 60px;
     height: 60px;
+    vertical-align: middle;
 }
 
 .headTitle {
     font-size: 25px;
     font-weight: bold;
+    margin-left: 15px;
+    vertical-align: middle;
 }
 
 /* Sidebar */
@@ -109,7 +111,6 @@ li {
 .fields {
     margin: 30px;
     display: flex;
-    justify-content: space-between;
 }
 
 .lbl {
@@ -126,7 +127,8 @@ li {
     background: #D7D7D5;
     box-shadow: 1px 1px 4px #14498B;
     padding: 5px;
-    width: 100%;
+    width: 70%;
+    margin-right: 15%;
 }
 
 /* Buttons */
@@ -135,7 +137,8 @@ li {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 20px;
+    margin: 7%;
+    float: right;
 }
 
 #editProfile:hover {
@@ -149,10 +152,20 @@ li {
     color: black;
     border: none;
     cursor: pointer;
+    float: right;
 }
 
 #complaintbtn:hover, #feedbackbtn:hover {
     background: #F0A700;
+}
+
+.stars{
+    margin: 30px;
+    display: inline;
+}
+
+.star{
+    width:32px;
 }
 
 /* Responsive Design */
@@ -192,4 +205,3 @@ li {
         font-size: 14px;
     }
 }
-

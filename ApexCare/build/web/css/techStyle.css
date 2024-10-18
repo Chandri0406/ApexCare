@@ -1,0 +1,202 @@
+body {
+    font-family: Sans-serif;
+    background-color: #C7C7BF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.headerBar {
+    background-color: #14498B;
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: -100%;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.headTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+/* Sidebar */
+.navBox {
+    width: 250px;
+    background-color: #E7E7E6;
+    box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
+    padding: 20px;
+    flex-shrink: 0;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navHead {
+    color: #02050A;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navLine {
+    border: 2px solid #F6BF41;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+
+.nav_items  {
+    color: #02050A;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_items:hover {
+    background-color: #14498B;
+    color: white;
+}
+
+/* Logout Button */
+.logout_btn {
+    color: #14498B;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 12px;
+    display: block;
+    border: none;
+    cursor: pointer; 
+}
+
+.logout_btn:hover {
+    background: none;
+    color: #002047;
+}
+
+/* Main Content */
+.mainContent {
+    flex-grow: 1;
+    background-color: #E7E7E6;
+    box-shadow: 3px 3px 4px rgba(0, 34, 78, 0.4);
+    color: #02050A;
+    margin: 1%;
+    padding: 20px;
+}
+
+/* Forms */
+.fields {
+    margin: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.lbl {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    width: 180px;
+    vertical-align: central;
+}
+
+.inputBox {
+    color: black;
+    font-size: 17px;
+    background: #D7D7D5;
+    box-shadow: 1px 1px 4px #14498B;
+    padding: 5px;
+    width: 50%;
+    margin-right: 30%;
+}
+
+/* Buttons */
+#editProfile {
+    background-color: #F6BF41;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 7%;
+    float: right;
+}
+
+#editProfile:hover {
+    background: #F0A700;
+}
+
+#complaintbtn, #feedbackbtn {
+    padding: 8px;
+    font-size: 17px;
+    background: #F6BF41;
+    color: black;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+#complaintbtn:hover, #feedbackbtn:hover {
+    background: #F0A700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navBox {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .mainContent {
+        margin: 0;
+    }
+
+    .fields {
+        flex-direction: column;
+    }
+
+    .lbl, .inputBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5px;
+    }
+    
+    .headTitle {
+        font-size: 20px;
+    }
+
+    .nav_items {
+        padding: 5px;
+        font-size: 14px;
+    }
+}

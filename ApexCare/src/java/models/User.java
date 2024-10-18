@@ -1,3 +1,4 @@
+
 package models;
 
 public class User {
@@ -12,9 +13,14 @@ public class User {
         this.password = Password; // Password hashing can be added later
         this.role = Role;
     }
-
+    
+    public User(){}
+    
+    // Constructor with username and password only
     public User(String username, String password) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.username = username;
+        this.password = password;
+        this.role = "Client"; // Default role can be "User" or set it later
     }
 
     // Getters and setters
@@ -40,10 +46,5 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    // Public method to authenticate user
-    public boolean authenticateUser(String username, String password) {
-        return this.username.equals(username) && this.password.equals(password);
     }
 }
