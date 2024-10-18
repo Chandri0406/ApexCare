@@ -111,7 +111,6 @@ li {
 .fields {
     margin: 30px;
     display: flex;
-    justify-content: space-between;
 }
 
 .lbl {
@@ -160,8 +159,13 @@ li {
     background: #F0A700;
 }
 
+.stars{
+    margin: 30px;
+    display: inline;
+}
+
 .star{
-    
+    width:32px;
 }
 
 /* Responsive Design */

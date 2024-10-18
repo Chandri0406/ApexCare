@@ -63,17 +63,14 @@
                 <input type="text" name="issueID" id="issueID" class="inputBox" value="" />
             </div>
 
-            <div class="fields">
+            <div class="stars">
                 <label for="rating" class="lbl">Rating:</label>
-                <input type="number" name="rating" id="rating" class="inputBox" value="" />
-                <div>
                 <!-- Create 5 stars for rating -->
                     <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(1)" data-value="1" alt="1 Star" id="star1">
                     <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(2)" data-value="2" alt="2 Stars" id="star2">
                     <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(3)" data-value="3" alt="3 Stars" id="star3">
                     <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(4)" data-value="4" alt="4 Stars" id="star4">
                     <img src="${pageContext.request.contextPath}/images/starB.png" class="star" onclick="setRating(5)" data-value="5" alt="5 Stars" id="star5">
-                </div>
                     <input type="hidden" name="rating" id="rating" value="" />
             </div>
 
