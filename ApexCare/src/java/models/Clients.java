@@ -1,8 +1,6 @@
 package models;
 
 public class Clients {
-    // UML Client Model 
-    // ClientID, Username, FirstName, LastName, Address, Phone, Email
     private int clientID;
     private String username;
     private String firstName;
@@ -12,8 +10,7 @@ public class Clients {
     private String email;
 
     // Default constructor
-    public Clients() {
-    }
+    public Clients() {}
 
     // Constructor with parameters
     public Clients(int clientID, String username, String firstName, String lastName, String address, String phone, String email) {
@@ -25,12 +22,7 @@ public class Clients {
         this.phone = phone;
         this.email = email;
     }
-
-    public Clients(String firstName, String lastName, String phone, String email, String address) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    // Getters and setters
+    
     public int getClientID() {
         return clientID;
     }
