@@ -4,7 +4,7 @@ to managing and maintaining pre-paid electricity meters through customized servi
 on client satisfaction and operational efficiency, ApexCare Solutions leverages cutting-edge
 technology to streamline the entire service lifecycle—from call intake and job assignment to
 incident resolution and customer satisfaction monitoring. Through a centralized platform, the
-system enables eƯicient job management, real-time performance tracking, and proactive
+system enables efficient job management, real-time performance tracking, and proactive
 service-level monitoring.
 This modern software solution integrates automation, real-time analytics, and mobile-friendly
 interfaces to optimize technician-client interactions. By providing continuous performance
